@@ -1,0 +1,28 @@
+img{
+    width: 6rem;
+    height: 4rem;
+    }
+
+    .double-divider {
+        position: relative;
+      }
+      
+      .double-divider:before,
+      .double-divider:after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        border-top: 1px solid #ddd;
+        width: 100%;
+      }
+      
+      .double-divider:before {
+        right: 100%;
+        margin-right: 15px;
+      }
+      
+      .double-divider:after {
+        left: 100%;
+        margin-left: 15px;
+      }
+      
