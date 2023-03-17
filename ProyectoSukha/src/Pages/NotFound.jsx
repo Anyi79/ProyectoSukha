@@ -15,7 +15,7 @@ const NotFound = () => {
 
             <div className="d-flex justify-content-center">
                 <Link to="/" className="btn btn-primary">
-                    <Button>Volver al Home</Button>
+                    <Button>Volver a Home</Button>
                 </Link>
 
             </div>
