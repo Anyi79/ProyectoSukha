@@ -3,6 +3,10 @@ import Root from "./Root";
 import Landing from "../Pages/Landing";
 import NotFound from "../Pages/NotFound";
 import ProductList from "../Pages/ProductList";
+import ProductInfo from "../components/ProductInfo";
+import { productsHandler } from "../handlers/productHandler";
+
+
 
 export const router = createBrowserRouter([
     {
@@ -17,19 +21,21 @@ export const router = createBrowserRouter([
                         index: true,
                         element: <Landing />,
                     },
+         
                     {
                         path: '/productList/',
                         element: <ProductList />,
+                        loader: fetchProducts
                         
 
                     },
                     {
-                        path: '/productList/velas',
-                        element: <ProductList />,
-                        
+                        path: "/productInfo/:id",
+                        element: <ProductInfo />,
+                        loader: fetchProduct
 
                     },
-                    {
+                   /* {
                         path: '/productList/sahumerios',
                         element: <ProductList />,
                         
@@ -59,7 +65,7 @@ export const router = createBrowserRouter([
                         
 
                     },
-             /*        {
+                     {
                         path: '/productInfo',
                         element: <ProductInfo />,
                     }
@@ -70,3 +76,13 @@ export const router = createBrowserRouter([
         ]
     },
 ]);
+
+async function fetchProducts() {
+    const products = await productsHandler.loadProducts();
+    return { products };
+}
+
+async function fetchProduct({ params }) {
+    const product = await productsHandler.loadProduct(params.id);
+    return { product };
+}

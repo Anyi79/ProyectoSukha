@@ -30,7 +30,7 @@ function NavScroll() {
               <Col className="d-flex flex-grow-1">
          
                 <Nav className="ml-auto">
-                  <Nav.Link className="mt-auto"  href="/productList/velas">Velas</Nav.Link>
+                  <Nav.Link className="mt-auto"  href="/productList">Velas</Nav.Link>
                   <Nav.Link className="mt-auto" href="/productList/sahumerios">Sahumerios</Nav.Link>
                   <Nav.Link className="mt-auto" href="/productList/inciensos">Inciensos</Nav.Link>
                 </Nav>
