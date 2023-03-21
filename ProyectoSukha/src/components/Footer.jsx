@@ -17,7 +17,8 @@ import { AiFillInstagram, AiOutlineWhatsApp, AiOutlineTwitter, AiFillFacebook } 
 export default function Footer() {
   return (
     <MDBFooter id="Footer" className='text-center' color='white' >
-      <MDBContainer className='p-4 mx-0'>
+      <div className="Container">
+      <MDBContainer className='p-4'>
         <section>
           <MDBRow id="FooterContainer">
             <MDBCol lg='3' md='' className='mb-4 mb-md-0'>
@@ -84,7 +85,7 @@ export default function Footer() {
           </MDBRow>
         </section>
       </MDBContainer>
-      
+      </div>
       <div id="Divider"></div>
 
       <div className='text-center p-3' style={{ backgroundColor: 'rgba(81, 26, 41, 1)' }}>
