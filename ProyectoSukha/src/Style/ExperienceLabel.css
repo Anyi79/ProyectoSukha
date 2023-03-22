@@ -54,10 +54,19 @@
 h1 {
     color: #511A29;
     font-family: 'Prociono', serif;
+    padding: .9375rem;
+    margin-left: 1.875rem;
 }
 
 h2, p, a {
     font-family: 'Prociono', serif;
+    color: white;
+}
+
+button {
+    font-family: 'Prociono', serif;
+    border: none;
+    background: none;
     color: white;
 }
 
