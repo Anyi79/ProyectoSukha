@@ -1,0 +1,38 @@
+Container  {
+    display: flex;
+    flex-direction: row;
+}
+
+h1 {
+    color: white;
+    font-family: 'Qwitcher Grypen';
+    font-size: 
+
+}
+
+p {
+    color: white;
+    font-family: 'Prociono', serif;
+    text-align: center;
+
+}
+
+#BannerText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #7E6268;
+    padding: 1.875rem;
+    width: 60%;
+    height: 25rem;
+
+
+}
+
+#BannerImg {
+   /* background-image: url(); */
+    background-color: black;
+    width: 40%;
+    height: auto;
+}
