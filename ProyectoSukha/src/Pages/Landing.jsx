@@ -1,16 +1,25 @@
 import React from "react";
+import Footer from "../components/Footer";
+import CarouselFadeExample from "../components/Carousel";
+
+
+
+
 
 
 function Landing() {
 
 return (
-
-    <div>
-        <h1>Bienvenid@s a Sukha</h1>
-        
-    </div>
+<>
+    <CarouselFadeExample/>
+    <Footer/>
+</>
 );
 
+
+
 } 
+
+
 
 export default Landing;
