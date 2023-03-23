@@ -1,4 +1,5 @@
 import { Outlet, useNavigation } from "react-router-dom";
+import ContactForm from "../components/ContactForm";
 import NavScroll from "../components/Navbar";
 
 
@@ -7,12 +8,9 @@ function Root() {
     return (
         <>
             <NavScroll />
-            <main className="container">
-                {navigation.state === "loading" && (
-                    <div className="alert alert-info my-S">Loading...</div>
-                )}
-                <Outlet />
-            </main>
+            <ContactForm />
+            <Outlet />
+            
           
         </>
     );

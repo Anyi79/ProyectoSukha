@@ -1,0 +1,11 @@
+
+Container {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.ContactForm {
+    display: flex;
+    flex-direction: row;
+}
