@@ -19,3 +19,15 @@ font-weight: bold;
 
 
  }
+
+
+ 
+ @media only screen and (min-width: 768px) {
+  .nav-collapse {
+    flex-wrap: nowrap;
+  }
+  .nav-item {
+    flex-basis: 50%;
+  }
+}
+

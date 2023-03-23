@@ -18,7 +18,6 @@ export const productsHandler = {
 console.log("esto es el nuevo prduct", newProductStructure);
         return productService.submitProduct(newProductStructure);   
     },
-
     loadProducts(){
         return productService.getProducts();
     },

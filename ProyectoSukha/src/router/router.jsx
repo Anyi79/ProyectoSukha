@@ -5,6 +5,7 @@ import NotFound from "../Pages/NotFound";
 import ProductList from "../Pages/ProductList";
 import ProductInfo from "../components/ProductInfo";
 import { productsHandler } from "../handlers/productHandler";
+/*import AddProduct from "../Pages/AddProduct"; */
 
 
 
@@ -35,6 +36,13 @@ export const router = createBrowserRouter([
                         loader: fetchProduct
 
                     },
+         /*            {
+                        path: '/addProduct/',
+                        element: <AddProduct />,
+                      
+
+                    }, */
+
                    /* {
                         path: '/productList/sahumerios',
                         element: <ProductList />,

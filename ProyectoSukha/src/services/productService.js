@@ -16,11 +16,11 @@ export const productService = {
     return response.data;
 
   },
-/* 
-  async submitProduct(newProduct) {
+
+/*   async submitProduct(newProduct) {
     console.log("new product de servicio", newProduct);
-    await apiClient.post("/products", newProduct);
-  },*/
+    await apiClient.post("/Product /Post", newProduct);
+  }, */
 
   async getProduct(id) {
     let response = await apiClient.get("/Product /GetProductById/" + id);
