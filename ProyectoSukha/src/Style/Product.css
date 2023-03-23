@@ -1,0 +1,30 @@
+.card {
+    margin-bottom: 1rem; 
+    
+  }
+.my-3{
+  background-color: #F2CC49;
+  border: solid #24B399 2px;
+}
+
+.btn-primary{
+  background-color: #24B399;
+  border: solid #B7BE5F 2px;
+  font-family: 'Overlock';
+  
+}
+
+.mx-2{
+  background-color: #fae765 ;
+  border: solid #B7BE5F 2px;  
+  font-family: 'Overlock';
+
+}
+
+.card-title {
+  font-family: 'Lobster';
+}
+
+.card-text{
+  font-family: 'Overlock';
+}

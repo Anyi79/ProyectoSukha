@@ -1,4 +1,4 @@
-import {productService} from "../services/productService";
+import { productService } from "../services/productService";      
 
 
 export const productsHandler = {
@@ -10,16 +10,14 @@ export const productsHandler = {
         let newProductStructure = {
            /*  "image": newProduct.image, */
             "name": newProduct.name,
-         /*    "description": newProduct.description,
+        /*     "description": newProduct.description,
             "category": newProduct.category, */
-            "price": newProduct.price,
             "brand": newProduct.brand,
-         
+            "price": newProduct.price,
         }
 console.log("esto es el nuevo prduct", newProductStructure);
         return productService.submitProduct(newProductStructure);   
     },
-
     loadProducts(){
         return productService.getProducts();
     },

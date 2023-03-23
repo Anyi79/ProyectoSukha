@@ -30,25 +30,28 @@ function NavScroll() {
               <Col className="d-flex flex-grow-1">
          
                 <Nav className="ml-auto">
-                  <Nav.Link className="mt-auto"  href="/productList/velas">Velas</Nav.Link>
+                  <Nav.Link className="mt-auto"  href="/productList">Velas</Nav.Link>
                   <Nav.Link className="mt-auto" href="/productList/sahumerios">Sahumerios</Nav.Link>
                   <Nav.Link className="mt-auto" href="/productList/inciensos">Inciensos</Nav.Link>
                 </Nav>
               </Col>
               <Col>
                 <Nav>
-                  <Navbar.Brand href='/'><img src={Img} /></Navbar.Brand>
+                <div class="nav-collapse">
+                  <Navbar.Brand id= 'logo' href='/'><img src={Img} /></Navbar.Brand>
+                  </div>
                 </Nav>
               </Col>
-
+            
               <div className="d-flex flex-column justify-content-end align-items-end" style={{marginTop: '50px'}} >
+              
                 <Col>
-                  <Nav className="mb-2">
-
+                  <Nav className="mb-2" id='menu' >
+              <div>
                     <Button variant="primary " style={{ backgroundColor: 'transparent', border: 'none' }}>
                       < BsSearch style={{ backgroundColor: 'none', color: '#511A29', size: '2em' }} />
                     </Button>
-                    <Button variant="primary " style={{ backgroundColor: 'transparent', border: 'none' }}>
+                    <Button variant="primary " href="/addProduct" style={{ backgroundColor: 'transparent', border: 'none' }}>
                       < BsPerson style={{ backgroundColor: 'none', color: '#511A29', size: '2em' }} />
                     </Button>
                     <Button variant="primary " style={{ backgroundColor: 'transparent', border: 'none' }}>
@@ -57,8 +60,10 @@ function NavScroll() {
                     <Button variant="primary " style={{ backgroundColor: 'transparent', border: 'none' }}>
                       < BsCart style={{ backgroundColor: 'none', color: '#511A29', size: '2em' }} />
                     </Button>
+                  </div>
                   </Nav>
                 </Col>
+            
                 <Col>
                   <Nav>
                     <Nav.Link href="/productList/aceites">Aceites</Nav.Link>

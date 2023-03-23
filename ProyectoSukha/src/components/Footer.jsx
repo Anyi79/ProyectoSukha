@@ -1,14 +1,6 @@
 import React from 'react';
-import '../../src/index.css';
-import {
-  MDBFooter,
-  MDBContainer,
-  MDBIcon,
-  MDBInput,
-  MDBCol,
-  MDBRow,
-  MDBBtn
-} from 'mdb-react-ui-kit';
+/* import '../../src/index.css'; */
+import {MDBFooter,MDBContainer,MDBIcon,MDBInput,MDBCol,MDBRow,MDBBtn} from 'mdb-react-ui-kit';
 import "../Style/Footer.css"
 import { AiFillInstagram, AiOutlineWhatsApp, AiOutlineTwitter, AiFillFacebook } from 'react-icons/ai';
 
