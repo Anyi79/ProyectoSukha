@@ -1,0 +1,39 @@
+
+
+.Container {
+    display: flex;
+    flex-direction: row;
+    height: 7rem;
+    justify-content: center;
+    align-items: center;
+    background-color: #7E6268;
+
+}
+
+.Content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: .9375rem;
+
+}
+
+p {
+    color: white;   
+    font-family: 'Qwitcher Grypen';
+    font-size: 4.375rem;
+    margin-left: .9375rem;
+    margin-right: .9375rem;}
+
+
+@media only screen and (max-width: 750px) {
+
+    p {
+        color: white;   
+        font-family: 'Qwitcher Grypen';
+        font-size: 3.125rem;
+        margin-left: .9375rem;
+        margin-right: .9375rem;}
+
+}
