@@ -1,4 +1,4 @@
-/* import { useState } from 'react';
+import { useState } from 'react';
 import { productsHandler } from '../handlers/productHandler';
 import { Form, Button } from 'react-bootstrap';
 import "../Style/AddProduct.css"
@@ -72,4 +72,4 @@ const [previewImage, setPreviewImage] = useState(null);
   );
 }
  
-export default ProductForm; */
+export default ProductForm;

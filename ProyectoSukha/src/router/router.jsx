@@ -5,7 +5,7 @@ import NotFound from "../Pages/NotFound";
 import ProductList from "../Pages/ProductList";
 import ProductInfo from "../components/ProductInfo";
 import { productsHandler } from "../handlers/productHandler";
-/*import AddProduct from "../Pages/AddProduct"; */
+import AddProduct from "../Pages/AddProduct";
 
 
 
@@ -30,18 +30,20 @@ export const router = createBrowserRouter([
                         
 
                     },
+
                     {
                         path: "/productInfo/:id",
                         element: <ProductInfo />,
                         loader: fetchProduct
 
                     },
-         /*            {
+                    
+                     {
                         path: '/addProduct/',
                         element: <AddProduct />,
                       
 
-                    }, */
+                    }, 
 
                    /* {
                         path: '/productList/sahumerios',
