@@ -9,7 +9,6 @@ function Root() {
     return (
         <>
             <NavScroll />
-            <Experiences />
             <Outlet />
             
           

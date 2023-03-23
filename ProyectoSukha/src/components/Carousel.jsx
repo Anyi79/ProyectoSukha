@@ -13,7 +13,7 @@ function CarouselFadeExample() {
         />
         <Carousel.Caption>
           <h3>Sukha</h3>
-          <p>Nuestro trabajo es tu calma</p>
+          <p id="CarrouselText">Nuestro trabajo es tu calma</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -26,7 +26,7 @@ function CarouselFadeExample() {
 
         <Carousel.Caption>
           <h3>Productos artesanales</h3>
-          <p>Prueba nuestra selección de articulos artesanales: velas de soja, inciensos artesanales, esencias aromáticas... </p>
+          <p id="CarrouselText">Prueba nuestra selección de articulos artesanales: velas de soja, inciensos artesanales, esencias aromáticas... </p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -39,7 +39,7 @@ function CarouselFadeExample() {
 
         <Carousel.Caption>
           <h3>¿Quieres saber más?</h3>
-          <p>
+          <p id="CarrouselText">
             Si estás interesado en conectar con tu paz interior te invitamos a que revises nuestros cursos.
           </p>
         </Carousel.Caption>

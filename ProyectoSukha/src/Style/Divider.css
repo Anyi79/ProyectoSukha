@@ -1,6 +1,6 @@
 
 
-.Container {
+.DivContainer {
     display: flex;
     flex-direction: row;
     height: 7rem;

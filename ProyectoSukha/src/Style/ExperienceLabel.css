@@ -1,10 +1,12 @@
+
+
 #Container1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 37.5rem;
-    height: auto;
+    height: 250px;
     background-color: #7E6268;
     padding: 1.25rem;
 
@@ -25,6 +27,7 @@
     justify-content: center;
     align-items: center;
     width: 37.5rem;
+    height: 200px;
     background-color: #D49D85;
     padding: 1.25rem;
     
@@ -58,9 +61,16 @@ h1 {
     margin-left: 1.875rem;
 }
 
-h2, p, a {
+#ExperienceTitle {
     font-family: 'Prociono', serif;
     color: white;
+
+}
+
+#ExperienceText {
+    font-family: 'Prociono', serif;
+    color: white;
+    font-size: 24px;
 }
 
 button {

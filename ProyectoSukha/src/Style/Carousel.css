@@ -5,3 +5,11 @@
 #CarouselFirstImg {
     height: 31.25rem;
 }
+
+#CarrouselText {
+   font-family: 'Prociono', serif;
+   font-size: 30px;
+   background-color: rgba(126, 98, 104, 0.7);
+   border-radius: 10px;
+
+}

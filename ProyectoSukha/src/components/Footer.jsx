@@ -86,7 +86,6 @@ export default function Footer() {
         </section>
       </MDBContainer>
       </div>
-      <div id="Divider"></div>
 
       <div className='text-center p-3' style={{ backgroundColor: 'rgba(81, 26, 41, 1)' }}>
         © 2023  Sukha
