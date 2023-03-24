@@ -125,13 +125,14 @@ button {
         width: auto;
         height: 18.75rem;
         background-color: black;
+        order: -1;
     }
 
     #img2 {
         width: auto;
         height: 18.75rem;
         background-color: black;
-        order: 2;
+        order: -1;
     }
 
 }
