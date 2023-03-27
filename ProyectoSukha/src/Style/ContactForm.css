@@ -1,11 +1,109 @@
 
-Container {
+#ContactFormContainer {
     display: flex;
     flex-direction: column;
+    background-color: #7E6268;
+    margin: 2.5rem;    
+    align-items: center;
+    justify-content: center;
 
 }
 
 .ContactForm {
     display: flex;
     flex-direction: row;
+}
+
+#ContactFormTitle {
+    text-align: center;
+    color: white;
+    width: 28.125rem;
+    margin: 1.5625rem;
+    font-family: 'Qwitcher Grypen', cursive;
+    font-size: 5rem;
+    border-bottom: 1px solid #ffffff;
+
+}
+
+#ContactFormInnerContainer {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    margin: 6.25rem;
+}
+
+#InfoContactForm {
+    margin: 6.25rem;
+    color: white;
+
+}
+
+#InputEmail {
+    width: 25rem;
+    background-color: #D6C6B4;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom: 4px solid #511A29;
+
+    
+}
+
+#InputMatter {
+    width: 25rem;
+    background-color: #D6C6B4;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom: 4px solid #511A29;
+
+}
+
+#InputMessage {
+    width: 25rem;
+    height: 12.5rem;
+    background-color: #D6C6B4;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom: 4px solid #511A29;
+}
+
+#ContactInfoContainer {
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom: 1px solid #ffffff;
+    width: 25rem;
+    margin-bottom: 1.5625rem;
+}
+
+#ContactFormIconContainer { 
+    margin-top: 3.125rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+#ContactFormSendBtn {
+    background-color: #511A29; 
+    border: none;
+    color: white;
+    width: 12.5rem;
+    height: 3.125rem;
+    font-family: 'Prociono', serif;
+
+}
+
+.ContactFormIconBtn {
+    border: none;
+    color: white;
+    background-color: #7E6268;
+
+}
+
+.ContactFormText { 
+    font-family: 'Prociono', serif;
 }
