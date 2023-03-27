@@ -28,14 +28,17 @@ function ContactForm () {
                     
                     </section>
                 <section >
-                    <form id="ContactFormInnerContainer" action="">
-                        <label htmlFor=""></label><input id="InputEmail" type="text" placeholder="Email" />
+                    <form id="ContactFormInnerContainer" action="https://formsubmit.co/projectsukhaecommerce@gmail.com" method="POST">
+                        <label htmlFor=""></label><input id="InputEmail" name="email" type="text" placeholder="Email" />
                         &nbsp;
-                        <label htmlFor=""></label><input id="InputMatter" type="text" placeholder="Asunto"/>
+                        <label htmlFor=""></label><input id="InputSubject" name="subjet" type="text" placeholder="Asunto"/>
                         &nbsp;
-                        <label htmlFor=""></label><input id="InputMessage" type="text" placeholder="Mensaje"/>
+                        <label htmlFor=""></label><input id="InputMessage" name="comments" type="text" placeholder="Mensaje"/>
                         &nbsp;
                         <button id="ContactFormSendBtn">Enviar</button>
+
+                        <input type="hidden" name="_next" value="http://localhost:5173/" />
+                        <input type="hidden" name="_captcha" value="false" />
                     </form>
                 </section>
             </div>
