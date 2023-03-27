@@ -11,59 +11,70 @@ import { BsSearch } from 'react-icons/bs';
 import { BsCart } from 'react-icons/bs';
 import { BsPerson } from 'react-icons/bs';
 import { Row, Col } from 'react-bootstrap';
+import { useState, useEffect } from 'react';
 
 
 
 
 function NavScroll() {
+
   return (
     <Navbar bg="light" expand="lg" >
       <Container fluid className="justify-content-around" style={{ backgroundColor: '#D49D85' }}>
+      <Navbar.Toggle className="ml-auto navbar-toggler-icon-xl" />
+
         <Row className='bold-color'>
-          <Navbar.Toggle aria-controls="navbarScroll" />
-          <Navbar.Collapse id="navbarScroll">
+        
              <Nav
               className="me-auto my-2 my-lg-0"
               style={{ maxHeight: '100px' }}
               navbarScroll>
-              
+                <Navbar.Collapse id="navbarScroll">
               <Col className="d-flex flex-grow-1">
          
-                <Nav className="ml-auto">
+                <Nav className="ml-auto" style={{ marginTop: '35px'}} >
                   <Nav.Link className="mt-auto"  href="/productList">Velas</Nav.Link>
                   <Nav.Link className="mt-auto" href="/productList/sahumerios">Sahumerios</Nav.Link>
                   <Nav.Link className="mt-auto" href="/productList/inciensos">Inciensos</Nav.Link>
                 </Nav>
               </Col>
-              <Col>
-                <Nav>
-                <div class="nav-collapse">
+              </Navbar.Collapse>
+              <Col >
+                <Nav className="mr-auto">
+                <div>
                   <Navbar.Brand id= 'logo' href='/'><img src={Img} /></Navbar.Brand>
                   </div>
                 </Nav>
               </Col>
             
-              <div className="d-flex flex-column justify-content-end align-items-end" style={{marginTop: '50px'}} >
+              <div className="d-flex flex-column justify-content-end align-items-end" >
               
-                <Col>
+                
+                
                   <Nav className="mb-2" id='menu' >
-              <div>
-                    <Button variant="primary " style={{ backgroundColor: 'transparent', border: 'none' }}>
+              <div className="d-flex" style={{ marginBottom: '-10px' }}>
+              <Navbar.Collapse id="navbarScroll">
+                
+                    <Button variant="primary " size="lg" style={{ backgroundColor: 'transparent', border: 'none' }}>
                       < BsSearch style={{ backgroundColor: 'none', color: '#511A29', size: '2em' }} />
                     </Button>
-                    <Button variant="primary " href="/addProduct" style={{ backgroundColor: 'transparent', border: 'none' }}>
+                    <Button variant="primary " size="lg" href="/addProduct" style={{ backgroundColor: 'transparent', border: 'none' }}>
                       < BsPerson style={{ backgroundColor: 'none', color: '#511A29', size: '2em' }} />
                     </Button>
-                    <Button variant="primary " style={{ backgroundColor: 'transparent', border: 'none' }}>
+                  
+                    </Navbar.Collapse>
+                  
+                    <Button variant="primary " size="lg" style={{ backgroundColor: 'transparent', border: 'none' }}>
                       < FaRegHeart style={{ backgroundColor: 'none', color: '#511A29', size: '2em' }} />
                     </Button>
-                    <Button variant="primary " style={{ backgroundColor: 'transparent', border: 'none' }}>
+                    <Button variant="primary "  size="lg" style={{ backgroundColor: 'transparent', border: 'none' }}>
                       < BsCart style={{ backgroundColor: 'none', color: '#511A29', size: '2em' }} />
                     </Button>
+                  
                   </div>
                   </Nav>
-                </Col>
-            
+                
+                <Navbar.Collapse id="navbarScroll">
                 <Col>
                   <Nav>
                     <Nav.Link href="/productList/aceites">Aceites</Nav.Link>
@@ -71,6 +82,7 @@ function NavScroll() {
                     <Nav.Link href="/productList/accesorios">Accesorios</Nav.Link>
                   </Nav>
                 </Col>
+                </Navbar.Collapse>
               </div>
 
 
@@ -105,7 +117,7 @@ function NavScroll() {
           </Form> */}
 
 </Nav>
-          </Navbar.Collapse>
+          
         </Row>
       </Container>
     </Navbar>

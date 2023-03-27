@@ -11,7 +11,7 @@ body {
  
   font-family: 'Amaranth', sans-serif;
   font-family: 'Jura', sans-serif;
-  font-size: 1.1em;
+  font-size: 1.5em;
 
 }
  .bold-color{
@@ -19,15 +19,10 @@ font-weight: bold;
 
 
  }
-
-
  
- @media only screen and (min-width: 768px) {
-  .nav-collapse {
-    flex-wrap: nowrap;
+/*  @media (max-width: 991.98px) {
+  .show-outside-hamburger {
+    display: block;
   }
-  .nav-item {
-    flex-basis: 50%;
-  }
-}
+} */
 

@@ -8,12 +8,13 @@ export const productsHandler = {
         }
 
         let newProductStructure = {
-           /*  "image": newProduct.image, */
+         /*    "image": newProduct.image, */
             "name": newProduct.name,
-        /*     "description": newProduct.description,
-            "category": newProduct.category, */
-            "brand": newProduct.brand,
+           /*  "description": newProduct.description, */
+         /*    "category": newProduct.category, */
             "price": newProduct.price,
+            "brand": newProduct.brand,
+           
         }
 console.log("esto es el nuevo prduct", newProductStructure);
         return productService.submitProduct(newProductStructure);   
