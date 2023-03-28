@@ -6,6 +6,7 @@ import ProductList from "../Pages/ProductList";
 import ProductInfo from "../components/ProductInfo";
 import { productsHandler } from "../handlers/productHandler";
 import AddProduct from "../Pages/AddProduct";
+import ShopCart from "../Pages/ShopCart";
 
 
 
@@ -80,6 +81,13 @@ export const router = createBrowserRouter([
                         element: <ProductInfo />,
                     }
              */
+                   {
+                        path: '/shopCart/',
+                        element: <ShopCart />,
+                        
+                      
+
+                    },
                 ]
             },
 

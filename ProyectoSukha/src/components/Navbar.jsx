@@ -67,7 +67,7 @@ function NavScroll() {
                     <Button variant="primary " size="lg" style={{ backgroundColor: 'transparent', border: 'none' }}>
                       < FaRegHeart style={{ backgroundColor: 'none', color: '#511A29', size: '2em' }} />
                     </Button>
-                    <Button variant="primary "  size="lg" style={{ backgroundColor: 'transparent', border: 'none' }}>
+                    <Button variant="primary "  size="lg" href="/shopCart/" style={{ backgroundColor: 'transparent', border: 'none' }}>
                       < BsCart style={{ backgroundColor: 'none', color: '#511A29', size: '2em' }} />
                     </Button>
                   

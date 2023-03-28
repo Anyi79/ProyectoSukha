@@ -27,10 +27,10 @@ console.log("esto es el nuevo prduct", newProductStructure);
         return productService.getProduct(id);
 
 },
-/*deleteProduct(id){
+deleteProduct(id){
     return productService.deleteProduct(id);
 },
-updateProduct(id, updatedProduct){
+/*updateProduct(id, updatedProduct){
     if (!updatedProduct) {
         return;
     }

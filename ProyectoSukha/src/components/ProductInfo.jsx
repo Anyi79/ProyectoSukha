@@ -5,6 +5,7 @@ import { BsHeartFill } from 'react-icons/bs';
 import { BsTrashFill } from 'react-icons/bs';
 import "../Style/ProductInfo.css";
 import { BsFillPencilFill } from "react-icons/bs";
+import { productsHandler } from '../handlers/productHandler';
 
 
 
@@ -13,12 +14,14 @@ function ProductInfo() {
 
   const { product } = useLoaderData();
 
-  const { id, name, description, category, brand, price, image } = product;
+  async function deleteProduct (id) {
+    await productsHandler.deleteProduct(id) 
+  }
 
   return (
     <>
 
-      <Card key={product.id} className="my-3" style={{ width: '18rem' }}>
+      <Card key={product.id} className="my-3" style={{ width: '18rem', marginLeft:'20em'}}>
         {/*  <Card.Img variant="top" src={product.image} />  */}
         <Card.Body>
           <Card.Title>{product.name}</Card.Title>
@@ -33,7 +36,7 @@ function ProductInfo() {
           <Button variant="primary" style={{ backgroundColor: 'transparent', border: 'none' }} className="mr-auto mx-2" href="/productInfo/:id">
           <BsFillPencilFill className="my-icon mr-2" style={{ backgroundColor: 'none', color: '#511A29', size: '2em' }}/>
           </Button>
-          <Button variant="primary" style={{ backgroundColor: 'transparent', border: 'none' }} className="mr-auto mx-2" onClick={() => deleteProduct(id)}>
+          <Button variant="primary" style={{ backgroundColor: 'transparent', border: 'none' }} className="mr-auto mx-2" onClick={() => deleteProduct(product.id)}>
           <BsTrashFill className="my-icon mr-2" style={{ backgroundColor: 'none', color: '#511A29', size: '2em' }}/></Button>
           </div>
         </Card.Body>
@@ -46,4 +49,4 @@ function ProductInfo() {
 
 }
 
-export default ProductInfo
+export default ProductInfo;

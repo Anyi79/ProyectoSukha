@@ -28,10 +28,10 @@ export const productService = {
     return product;
   },
 
-  /*async deleteProduct(id) {
-    await apiClient.delete("/products/" + id)
+  async deleteProduct(id) {
+    await apiClient.delete("/Product /Delete?id=" + id);
   },
-  async updateProduct(id, updatedProduct) {
+  /*async updateProduct(id, updatedProduct) {
     await apiClient.patch("/products/" + id, updatedProduct)
   } */
 }
