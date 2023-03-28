@@ -30,9 +30,9 @@ function NavScroll() {
               <Col className="d-flex flex-grow-1">
          
                 <Nav className="ml-auto">
-                  <Nav.Link className="mt-auto"  href="/productList/velas">Velas</Nav.Link>
-                  <Nav.Link className="mt-auto" href="/productList/sahumerios">Sahumerios</Nav.Link>
-                  <Nav.Link className="mt-auto" href="/productList/inciensos">Inciensos</Nav.Link>
+                  <Nav.Link className="mt-auto"  href="/productList/velas" style={{ color: '#511A29' }}>Velas</Nav.Link>
+                  <Nav.Link className="mt-auto" href="/productList/sahumerios" style={{ color: '#511A29' }}>Sahumerios</Nav.Link>
+                  <Nav.Link className="mt-auto" href="/productList/inciensos" style={{ color: '#511A29' }}>Inciensos</Nav.Link>
                 </Nav>
               </Col>
               <Col>
@@ -61,16 +61,12 @@ function NavScroll() {
                 </Col>
                 <Col>
                   <Nav>
-                    <Nav.Link href="/productList/aceites">Aceites</Nav.Link>
-                    <Nav.Link href="/productList/minerales">Minerales</Nav.Link>
-                    <Nav.Link href="/productList/accesorios">Accesorios</Nav.Link>
+                    <Nav.Link href="/productList/aceites" style={{ color: '#511A29' }}>Aceites</Nav.Link>
+                    <Nav.Link href="/productList/minerales" style={{ color: '#511A29' }}>Minerales</Nav.Link>
+                    <Nav.Link href="/productList/accesorios" style={{ color: '#511A29' }}>Accesorios</Nav.Link>
                   </Nav>
                 </Col>
               </div>
-
-
-
-
 
 
               {/*             <NavDropdown title="Link" id="navbarScrollingDropdown">

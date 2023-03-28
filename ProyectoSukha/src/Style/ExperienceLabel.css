@@ -6,7 +6,7 @@
     justify-content: center;
     align-items: center;
     width: 37.5rem;
-    height: 250px;
+    height: auto;
     background-color: #7E6268;
     padding: 1.25rem;
 
@@ -27,7 +27,7 @@
     justify-content: center;
     align-items: center;
     width: 37.5rem;
-    height: 200px;
+    height: auto;
     background-color: #D49D85;
     padding: 1.25rem;
     
@@ -44,14 +44,21 @@
 #img1 {
     width: 15.625rem;
     height: auto;
-    background-color: black;
+    background-image: url(/src/Img/aromaterapia-guia-rapida-para-principiantes_fc91ad99b45b506a_rs.jpg);
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    
 }
 
 #img2 {
     width: 15.625rem;
     height: auto;
     order: -1;
-    background-color: black;
+    background-image: url(/src/Img/lvp.reiki-1\ -\ copia.jpg);
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
 }
 
 h1 {
@@ -70,8 +77,11 @@ h1 {
 #ExperienceText {
     font-family: 'Prociono', serif;
     color: white;
-    font-size: 24px;
+    font-size: 16px;
+    text-align: justify;
+    padding: 2%;
 }
+
 
 button {
     font-family: 'Prociono', serif;
