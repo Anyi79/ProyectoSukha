@@ -3,7 +3,7 @@
 .DivContainer {
     display: flex;
     flex-direction: row;
-    height: 7rem;
+    height: auto;
     justify-content: center;
     align-items: center;
     background-color: #7E6268;
@@ -32,8 +32,8 @@
     #DividerText {
         color: white;   
         font-family: 'Qwitcher Grypen';
+        text-align: center;
         font-size: 3.125rem;
-        margin-left: .9375rem;
-        margin-right: .9375rem;}
+    }
 
 }
