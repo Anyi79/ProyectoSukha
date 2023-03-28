@@ -66,19 +66,19 @@ export default function Footer() {
                 </li></ul>
             <section className='mb-4'>
           <MDBIcon color="light"  className='m-2'  href='#!' role='button'>
-            <AiFillInstagram />
+            <AiFillInstagram size={30}/>
           </MDBIcon>
 
           <MDBIcon color="light" className='m-2' href='#!' role='button'>
-            <AiOutlineWhatsApp />
+            <AiOutlineWhatsApp size={30}/>
           </MDBIcon>
 
           <MDBIcon color="light"  className='m-2' href='#!' role='button'>
-            <AiOutlineTwitter />
+            <AiOutlineTwitter size={30}/>
           </MDBIcon>
 
           <MDBIcon color="light" className='m-2' href='#!' role='button'>
-            <AiFillFacebook />
+            <AiFillFacebook size={30}/>
           </MDBIcon>
             </section>
             </MDBCol>
