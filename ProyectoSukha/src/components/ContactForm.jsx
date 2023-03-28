@@ -11,10 +11,10 @@ function ContactForm () {
             <div className="ContactForm">
                 <section id="InfoContactForm">
                     <div>
-                        <p><BsEnvelope size={30}/>  consultas@suhka.com</p>
+                        <p className="ContactFormText"><BsEnvelope size={30}/>  consultas@suhka.com</p>
                     <div>
                     </div>
-                        <p><BsTelephone size={30}/>  635 846 598</p>
+                        <p className="ContactFormText"><BsTelephone size={30}/>  635 846 598</p>
                         </div>
                     &nbsp; 
                     <div id="ContactInfoContainer">

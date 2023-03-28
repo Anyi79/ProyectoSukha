@@ -1,4 +1,3 @@
-
 #ContactFormContainer {
     display: flex;
     flex-direction: column;
@@ -30,11 +29,12 @@
     flex-direction: column;
     justify-items: center;
     align-items: center;
-    margin: 6.25rem;
+    margin: 10%;
 }
 
 #InfoContactForm {
-    margin: 6.25rem;
+    margin-top: 5%;
+    margin-right: 5%;
     color: white;
 
 }
@@ -109,4 +109,22 @@
 }
 
 
- 
+@media screen and (max-width: 780px) {
+
+    .ContactForm {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    #ContactFormIconContainer { 
+        margin-top: 3.125rem;
+        margin-bottom: 10%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    
+    }
+
+
+
+}
