@@ -5,7 +5,7 @@ function LandingDivider () {
     <>
         <container className="DivContainer"> 
             <div className="Content"> 
-            <img className="Logo" src="src\Img\logoleft.png" alt="" /><p>Despierta tu esencia, transforma tu vida</p>  <img className="Logo" src="src\Img\logoright.png" alt="" />
+            <img className="Logoeft" src="src\Img\logoleft.png" alt="" /><p id="DividerText">Despierta tu esencia, transforma tu vida</p>  <img className="LogoRight" src="src\Img\logoright.png" alt="" />
             </div>
         
         </container>
@@ -16,3 +16,6 @@ function LandingDivider () {
 }
 
 export default LandingDivider;
+
+
+

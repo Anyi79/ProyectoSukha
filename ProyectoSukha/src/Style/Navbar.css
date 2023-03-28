@@ -15,7 +15,11 @@ body {
 
 }
  .bold-color{
-font-weight: bold;
+  font-weight: bold;
 
 
+ }
+
+ #NavContainer {
+  padding: 0;
  }

@@ -19,7 +19,7 @@
 
 }
 
-p {
+#DividerText {
     color: white;   
     font-family: 'Qwitcher Grypen';
     font-size: 4.375rem;
@@ -29,7 +29,7 @@ p {
 
 @media only screen and (max-width: 750px) {
 
-    p {
+    #DividerText {
         color: white;   
         font-family: 'Qwitcher Grypen';
         font-size: 3.125rem;

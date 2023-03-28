@@ -17,7 +17,7 @@ import { Row, Col } from 'react-bootstrap';
 
 function NavScroll() {
   return (
-    <Navbar bg="light" expand="lg" >
+    <Navbar id="NavContainer" expand="lg" >
       <Container fluid className="justify-content-around" style={{ backgroundColor: '#D49D85' }}>
         <Row className='bold-color'>
           <Navbar.Toggle aria-controls="navbarScroll" />

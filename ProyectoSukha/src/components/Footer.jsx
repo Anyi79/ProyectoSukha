@@ -10,18 +10,18 @@ import {
   MDBBtn
 } from 'mdb-react-ui-kit';
 import "../Style/Footer.css"
-import { AiFillInstagram, AiOutlineWhatsApp, AiOutlineTwitter, AiFillFacebook } from 'react-icons/ai';
+import { AiFillInstagram, AiOutlineWhatsApp, AiOutlineTwitter, AiFillFacebook, AiOutlineBorder } from 'react-icons/ai';
 
 
 
 export default function Footer() {
   return (
     <MDBFooter id="Footer" className='text-center' color='white' >
-      <div className="Container">
+      <div id="BKG">
       <MDBContainer className='p-4'>
         <section>
           <MDBRow id="FooterContainer">
-            <MDBCol lg='3' md='' className='mb-4 mb-md-0'>
+            <MDBCol lg='3' className='mb-4 mb-md-0'>
               <h5 className='text-uppercase'>Envíos</h5>
 
               <ul className='list-unstyled mb-0'>

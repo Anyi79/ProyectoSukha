@@ -2,6 +2,10 @@
     width: 100%;
 }
 
+#Container {
+    width: 100%;
+}
+
 #FooterContainer {
     display: flex;
     justify-content: space-between;
@@ -19,8 +23,16 @@
 
 .p-4{ 
     background-color: #511A29;
-    margin: 0 auto;
+    margin: 0;
+    border-bottom: 1px solid white;
+}
 
+.text-white {
+    font-family: 'Prociono', serif;
+}
+
+#BKG {
+    background-color: #511A29;
 }
 
 .mb-4{
