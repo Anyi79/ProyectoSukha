@@ -12,11 +12,24 @@ function Product() {
   const cartProducts = JSON.parse(localStorage.getItem("cartProducts")) || [];
   
 
-  const addToCart = async (product) => {
+  const addToCart = async (product, quantity) => {
     console.log("cart product array", cartProducts);
-    cartProducts.push(product);
+    
+    // Comprueba si el producto ya está en el carrito
+    const existingProduct = cartProducts.find(p => p.id === product.id);
+    
+    if (existingProduct) {
+      // Si el producto ya está en el carrito, aumenta la cantidad
+      existingProduct.quantity += quantity;
+    } else {
+      // Si el producto no está en el carrito, añade el producto y la cantidad
+      cartProducts.push({ ...product, quantity });
+    }
+  console.log(cartProducts)
+    // Guarda los productos del carrito en el almacenamiento local
     localStorage.setItem("cartProducts", JSON.stringify(cartProducts));
   }
+  
 
   const [windowSize, setWindowSize] = useState(window.innerWidth);
 
@@ -49,7 +62,7 @@ function Product() {
                   <Button variant="outline-primary" style={{ backgroundColor: 'transparent', border: 'none', color: '#511A29', '1.5rem': '1.2rem' }} href={`/productInfo/${product.id}`}>Mas Info</Button>
                 </div>
                 <div className="d-flex justify-content-center" style={{ marginBottom: '20px' }}>
-                  <Button variant="primary" style={{ backgroundColor: '#511A29', border: 'none', '1.5rem': '1.2rem' }} onClick={() => addToCart(product)}>Añadir a la cesta</Button>
+                  <Button variant="primary" style={{ backgroundColor: '#511A29', border: 'none', '1.5rem': '1.2rem' }} onClick={() => addToCart(product, 1)}>Añadir a la cesta</Button>
                 </div>
               </Card.Footer>
             </Card>

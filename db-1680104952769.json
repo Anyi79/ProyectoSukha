@@ -1,0 +1,26 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Velas perfumadas de invierno",
+      "imgUrl": "../Img/piedrasRosas.jpg",
+      "quantity": 1,
+      "description": "Velas perfumadas de invierno",
+      "price": "2"
+    },
+    {
+      "id": "2",
+      "name": "Velas perfumadas de invierno",
+      "quantity": 2,
+      "description": "Velas perfumadas de invierno",
+      "price": "2"
+    },
+    {
+      "id": "3",
+      "name": "Velas perfumadas de invierno",
+      "quantity": 1,
+      "description": "Velas perfumadas de invierno",
+      "price": "2"
+    }
+  ]
+}
