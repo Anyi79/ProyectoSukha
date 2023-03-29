@@ -1,0 +1,183 @@
+form {
+    margin: 2vh;
+    background-color: #7E6268;
+    width: 80rem;
+    padding: 4vh 2vw;
+    margin-left: 6vw;
+    font-family: "Jmh";
+    border-radius: 5px;
+    font-size: 20px;
+    
+  }
+
+  #form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  input, select, option {
+    display: block;
+    margin: 0.5rem 0;
+    margin: 1vh;
+    width: 31vw;
+    min-height: 4vh;
+    background-color: #D6C6B4;
+    color: #000000;
+    border-radius: 5px;
+    padding: 0.5vh 0.8vw;
+    font-family: "Jmh";
+  }
+  
+  label {
+    margin-top: 2vh;
+    color: white;
+    font-family: "Mom";
+    margin-left: 1.5vw;
+  }
+  
+  select {
+    color: #D6C6B4;
+  }
+  
+  .inline {
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+  }
+  
+  input[type=submit] {
+    display: block;
+    width: 20vw;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1.1rem;
+    background-color: white;
+    border-color: whitesmoke;
+    border-radius: 5px;
+    color: black;
+    font-family: "Mom";
+    margin-left: 5vw;
+  }
+  
+  input[type=reset] {
+    display: block;
+    width: 10vw;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1.1rem;
+    background-color: white;
+    border-color: whitesmoke;
+    border-radius: 5px;
+    color: black;
+    font-family: "Mom";
+  }
+  
+  input[type=button] {
+    display: block;
+    width: 10vw;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1.1rem;
+    background-color: white;
+    border-color: whitesmoke;
+    border-radius: 5px;
+    color: black;
+    font-family: "Mom";
+  }
+  
+  input[type=file] {
+    padding: 1px 2px;
+    color: #D6C6B4;
+    background-color: #D6C6B4;
+    border-radius: 5px;
+    font-family: "Mom";
+    width: 31vw;
+    margin-top: 2vh;
+  }
+  
+  #buttons {
+    display: flex;
+    align-content: center;
+  }
+  
+  #term {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  #term label {
+    margin-top: 0.3rem;
+  }
+  
+  input[type=checkbox] {
+    width: 1rem;
+  }
+  
+  h2, p {
+    font-family: "Jmh";
+    font-size: 15px;
+    text-align: center;
+  }
+  
+  h2 {
+    text-transform: uppercase;
+  }
+  
+  p {
+    text-transform: capitalize;
+  }
+  
+  @media (min-width: 320px) and (max-width: 760px) {
+    #buttons {
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+    }
+    input[type=submit] {
+      margin-bottom: 0%;
+    }
+    input[type=checkbox] {
+      width: 1rem;
+    }
+  }
+  @media (min-width: 320px) and (max-width: 760px) {
+    .form {
+      width: 20vw;
+      padding: 4vh 2vw;
+      font-family: "Jmh";
+      border-radius: 5px;
+      margin-top: 0;
+      margin-left: 3vw;
+    }
+    #title {
+      margin-left: 2vw;
+    }
+    input, label {
+      width: 60vw;
+      margin-left: -5vw;
+    }
+    input[type=file] {
+      padding: 1px 2px;
+      color: white;
+      background-color: #D6C6B4;
+      border-radius: 5px;
+      font-family: "Mom";
+      width: 80vw;
+      margin-top: 2vh;
+      height: 2vh;
+      padding-top: 0.8vh;
+    }
+    select {
+      width: 80vw;
+    }
+    #buttons {
+      text-align: center;
+      margin: auto;
+      width: 25vw;
+      font-size: 12px;
+      margin-left: 0;
+    }
+    #return {
+      width: 25vw;
+    }
+  }

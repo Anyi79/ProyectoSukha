@@ -3,6 +3,7 @@ import Root from "./Root";
 import Landing from "../Pages/Landing";
 import NotFound from "../Pages/NotFound";
 import ProductList from "../Pages/ProductList";
+import AdminAddProduct from "../Pages/AdminAddProduct";
 
 export const router = createBrowserRouter([
     {
@@ -18,10 +19,17 @@ export const router = createBrowserRouter([
                         element: <Landing />,
                     },
                     {
+                        path: '/adminAddProduct/',
+                        element: <AdminAddProduct />,
+                    },
+                    {
+                        path: '/login/',
+                        element: <Login />,
+                        loader: fetchPhoto,
+                    },
+                    {
                         path: '/productList/',
                         element: <ProductList />,
-                        
-
                     },
                     {
                         path: '/productList/velas',
@@ -51,13 +59,11 @@ export const router = createBrowserRouter([
                         path: '/productList/minerales',
                         element: <ProductList />,
                         
-
                     },
                     {
                         path: '/productList/accesorios',
                         element: <ProductList />,
-                        
-
+    
                     },
              /*        {
                         path: '/productInfo',
@@ -71,4 +77,12 @@ export const router = createBrowserRouter([
     },
 ]);
 
+async function fetchProducts() {
+    const Products = await ProductHandlerAPI.loadProducts();
+    return { Products };
+}
 
+async function fetchProduct({ params }) {
+    const Product = await ProductHandlerAPI.loadPRODUCT(params.id);
+    return { Product };
+}

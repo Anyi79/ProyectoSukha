@@ -1,16 +1,20 @@
 import React from "react";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
-import Login from "../components/Login";
+import AddProductAdmin from "../components/AddProductAdmin";
 
 
-export default function Login() {
+export default function AdminAddProduct() {
 
 return (
 <>
 
-    <Login/>
+    <AddProductAdmin/>
     <Footer/>
 </>
 );
-}
+
+
+
+
+} 
