@@ -61,9 +61,10 @@
     font-size: .875rem;
 }
 
-#RegisterFormP1 {
+#RegisterFormP {
     color: white;
     font-family: 'Prociono', serif;
+    padding: 5%;
 
 }
 
@@ -104,3 +105,42 @@
     font-family: 'Prociono', serif;
 }
 
+
+@media only screen and (max-width: 750px) { 
+    #RFSection1 {
+        margin-bottom: 2%;
+        border-bottom: 0.5px solid white;
+        width: 12.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #RFSection2 {
+        margin-bottom: 2%;
+        width: 12.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #RFSection3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 37.5rem;
+    }
+
+    .RegisterFormSubSection {
+        margin: 0%;
+       
+    }
+
+    #RFinput2 {
+        order: -1;
+    }
+
+}
