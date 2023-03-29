@@ -3,7 +3,8 @@ import ProductInfo from "../src/components/ProductInfo.jsx";
 import '@testing-library/jest-dom';
 
 test("should render product title ", () => {
-    const productTitle = screen.getByText(/test product/i);
+    render (<ProductInfo />);
+    const productTitle = screen.getByText(/Aceites/);
     expect(productTitle).toBeInTheDocument();
 
 })
@@ -11,12 +12,12 @@ test("should render product title ", () => {
 vi.mock('react-router-dom', () => ({
     useLoaderData: vi.fn(() => ({
     product: {
-    name: "Oil",
-    title: 'test product',
-    description: "This is a test",
-    category: "Oil"
-   // brand: 'Dove',
-    //price: 9.99,
+    id: 1,
+    name: "Aceites",
+    description: "ingredientes naturales",
+    category: "Aceites",
+    brand: "Oil",
+    price: 9.9,
     //image: 'https://example.com/product.jpg',
     },
     })),

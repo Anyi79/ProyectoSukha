@@ -3,7 +3,7 @@ import Card from 'react-bootstrap/Card';
 import { Button } from 'react-bootstrap';
 import { BsHeartFill } from 'react-icons/bs';
 import { BsTrashFill } from 'react-icons/bs';
-import "../Style/ProductInfo.css";
+//import "../Style/ProductInfo.css";
 import { BsFillPencilFill } from "react-icons/bs";
 
 
