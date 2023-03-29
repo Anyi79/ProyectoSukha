@@ -14,7 +14,7 @@ function RegisterForm () {
             <section id="RegisterFormContainer">
                 <p id="RegisterFormP1">*Obligatorios</p>
                 <form id="InputContainer" action="">
-                    <div id="Section1">
+                    <div id="RFSection1">
                         <div class="RegisterFormSubSection">
                             <input class="RegisterFormInput" type="text" name="Nombre" placeholder="Nombre*" />
                             <select name="UserType" class="RegisterFormInput">
@@ -29,7 +29,7 @@ function RegisterForm () {
                         </div>
                         
                     </div>
-                    <div id="Section1">
+                    <div id="RFSection1">
                         <div class="RegisterFormSubSection">
                             <input class="RegisterFormInput" type="email" name="email" placeholder="Dirección de correo electrónico*" />
                             <select name="Country" class="RegisterFormInput">
@@ -47,7 +47,7 @@ function RegisterForm () {
                         </div>
                     </div>
                     <div >
-                        <div id="Section2">
+                        <div id="RFSection2">
                             <div class="RegisterFormSubSection">
                                 <input class="RegisterFormInput" type="text" name="password" placeholder="Contraseña*" />
                             </div>
@@ -57,7 +57,7 @@ function RegisterForm () {
                         </div>
                     </div>
                     <p id="RegisterFormP">Para más información sobre el tratamiento de tus datos personales, consulta nuestro Aviso de Privacidad.</p>
-                    <div id="Section3">
+                    <div id="RFSection3">
                         <a href="">Volver al Inicio de Sesisión</a> 
                         <button id="RegisterFormBTN">
                             Registrarse

@@ -29,7 +29,7 @@
 
 }
 
-#Section1 {
+#RFSection1 {
     margin-bottom: 2%;
     width: 37.5rem;
     border-bottom: 0.5px solid white;
@@ -38,7 +38,7 @@
     justify-content: center;
 }
 
-#Section2 {
+#RFSection2 {
     margin-bottom: 2%;
     width: 37.5rem;
     display: flex;
@@ -47,7 +47,7 @@
     justify-content: center;
 }
 
-#Section3 {
+#RFSection3 {
     display: flex;
     justify-content: space-between;
     width: 37.5rem;
