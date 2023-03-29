@@ -11,7 +11,7 @@ body {
  
   font-family: 'Amaranth', sans-serif;
   font-family: 'Jura', sans-serif;
-  font-size: 1.1em;
+  font-size: 1.5em;
 
 }
  .bold-color{
@@ -19,7 +19,10 @@ body {
 
 
  }
+ 
+/*  @media (max-width: 991.98px) {
+  .show-outside-hamburger {
+    display: block;
+  }
+} */
 
- #NavContainer {
-  padding: 0;
- }
