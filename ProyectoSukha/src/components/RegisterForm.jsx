@@ -12,44 +12,59 @@ function RegisterForm () {
                 </div>
             </section>
             <section id="RegisterFormContainer">
-                <p>*Obligatorios</p>
+                <p id="RegisterFormP">*Obligatorios</p>
                 <form id="InputContainer" action="">
-                    <div >
-                        <div>
-                            <input class="RegisterFormInput" type="text" />
-                            <input class="RegisterFormInput" type="text" />
+                    <div id="Section1">
+                        <div class="RegisterFormSubSection">
+                            <input class="RegisterFormInput" type="text" name="Nombre" placeholder="Nombre*" />
+                            <select name="UserType" class="RegisterFormInput">
+                                <option value="Minorist">Minorista</option>
+                                <option value="Mayorist">Mayorista</option>
+                            </select>
                         </div>
+                        
                         <div>
-                            <input class="RegisterFormInput" type="text" />
-                            <input class="RegisterFormInput"type="text" />
+                            <input class="RegisterFormInput" type="text" name="Surname" placeholder="Apellido*" />
+                            <input class="RegisterFormInput"type="text" name="id" placeholder="DNI/CIF*"/>
                         </div>
                         
                     </div>
-                    <div>
-                        <div>
-                            <input class="RegisterFormInput" type="text" />
-                            <input class="RegisterFormInput" type="text" />
+                    <div id="Section1">
+                        <div class="RegisterFormSubSection">
+                            <input class="RegisterFormInput" type="email" name="email" placeholder="Dirección de correo electrónico*" />
+                            <select name="Country" class="RegisterFormInput">
+                                <option value="Minorist">España</option>
+                                <option value="Mayorist">Italia</option>
+                                <option value="Mayorist">Francia</option>
+                                <option value="Mayorist">Reino Unido</option>
+                                <option value="Mayorist">Alemania</option>
+                                
+                            </select>
                         </div>
-                        <div>
-                            <input class="RegisterFormInput" type="text" />
-                            <input class="RegisterFormInput" type="text" />
+                        <div> 
+                            <input class="RegisterFormInput" type="email" name="email" placeholder="Confirma tu correo electrónico*"  />
+                            <input class="RegisterFormInput" type="number" placeholder="Movil (opcional)" />
                         </div>
                     </div>
-                    <div>
-                        <div>
-                            <input class="RegisterFormInput" type="text" />
-                            <input class="RegisterFormInput" type="text" />
+                    <div >
+                        <div id="Section2">
+                            <div class="RegisterFormSubSection">
+                                <input class="RegisterFormInput" type="text" name="password" placeholder="Contraseña*" />
+                            </div>
+                            <div>
+                            <input class="RegisterFormInput" type="text" name="password" placeholder="Confirma tu contraseña" />
+                            </div>
                         </div>
                     </div>
-                    <p>Para más información sobre el tratamiento de tus datos personales, consulta nuestro Aviso de Privacidad.</p>
-                    <div>
-                        <a href="">Volver al Inicio de Sesisión</a>
-                        <button>
+                    <p id="RegisterFormP">Para más información sobre el tratamiento de tus datos personales, consulta nuestro Aviso de Privacidad.</p>
+                    <div id="Section3">
+                        <a href="">Volver al Inicio de Sesisión</a> 
+                        <button id="RegisterFormBTN">
                             Registrarse
                         </button>
                     </div>
                 </form>
-                <p>Al registrarse confirmas que eres mayor de 16 años y que has leído y aceptas nuestros Terminos y Condiciones. Usaremos tu información para gestionar tu cuenta para fines estadísticos. </p>
+                <p id="RegisterFormPBottom">Al registrarse confirmas que eres mayor de 16 años y que has leído y aceptas nuestros Terminos y Condiciones. Usaremos tu información para gestionar tu cuenta para fines estadísticos. </p>
             </section>
         </container>
         </>

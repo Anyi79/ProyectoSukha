@@ -29,7 +29,66 @@
 
 }
 
-.RegisterFormInput {
-    margin: .3125rem;
+#Section1 {
+    margin-bottom: 2%;
+    width: 37.5rem;
+    border-bottom: 0.5px solid white;
+    align-items: center;
+    justify-content: center;
+}
+
+#Section2 {
+    margin-bottom: 2%;
+    width: 37.5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+#Section3 {
+    display: flex;
+    justify-content: space-between;
+    width: 37.5rem;
+}
+
+#RegisterFormP {
+    color: white;
+    font-family: 'Prociono', serif;
+}
+
+#RegisterFormBTN {
+    background-color: #511A29;
+    font-family: 'Prociono', serif;
+    width: 12.5rem;
+    height: 3.125rem;
+    margin: 2%;
+    font-size: 1.875rem;
     
 }
+
+#RegisterFormPBottom {
+    color: white;
+    font-family: 'Prociono', serif;
+    padding: 5%;
+}
+
+.RegisterFormInput {
+    margin: .3125rem;
+    margin-bottom: 10%;
+    width: 18.75rem;
+    background-color: #D6C6B4;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom: 4px solid #511A29;
+}
+
+.RegisterFormSubSection {
+    margin-right: 20%;
+}
+
+::placeholder {
+    padding: 5%;
+    color: #511A29;
+    font-family: 'Prociono', serif;
+}
+
