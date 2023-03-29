@@ -13,7 +13,7 @@
 
 }
 
-#Section1{
+#ELSection1{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -33,7 +33,7 @@
     
 }
 
-#Section2{
+#ELSection2{
     display: flex;
     flex-direction: row;
     justify-content: flex-end;

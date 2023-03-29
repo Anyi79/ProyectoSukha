@@ -12,7 +12,7 @@ function RegisterForm () {
                 </div>
             </section>
             <section id="RegisterFormContainer">
-                <p id="RegisterFormP">*Obligatorios</p>
+                <p id="RegisterFormP1">*Obligatorios</p>
                 <form id="InputContainer" action="">
                     <div id="Section1">
                         <div class="RegisterFormSubSection">
@@ -41,7 +41,7 @@ function RegisterForm () {
                                 
                             </select>
                         </div>
-                        <div> 
+                        <div > 
                             <input class="RegisterFormInput" type="email" name="email" placeholder="Confirma tu correo electrónico*"  />
                             <input class="RegisterFormInput" type="number" placeholder="Movil (opcional)" />
                         </div>
