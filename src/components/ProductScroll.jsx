@@ -7,9 +7,11 @@ import { useState, useEffect } from 'react';
 import React from "react";
 
 
-function Product() {
+function ProductScroll() {
   const { products } = useLoaderData();
+  
   const cartProducts = JSON.parse(localStorage.getItem("cartProducts")) || [];
+
   
 
   const addToCart = async (product, quantity) => {
@@ -46,12 +48,16 @@ function Product() {
   return (
     <Container>
       <Row className="d-flex flex-wrap justify-content-center">
+      <h2>Mis productos</h2>
+      <div style={{ overflowX: "scroll" }}>
         {products.map((product) => (
           <Col md={12 / showNumProducts} key={product.id} className="custom-col">
             <Card className="custom-card" style={{ width: cardWidth, height: cardHeight, margin: '30px 1em' }}>
               <div className="d-flex justify-content-center" style={{ marginTop: '30px' }} >
                 <Card.Title>{product.name}</Card.Title>
-              </div><Card.Img variant="top" src={`data:image/png;base64,${products.content}`} class="card-img-top rounded img-fluid" style={{ height: '12rem' }} /><Card.Body>
+              </div>
+              {/* <Card.Img variant="top" src={`data:image/png;base64,${products.content}`} class="card-img-top rounded img-fluid" style={{ height: '12rem' }} /> */}
+              <Card.Body>
                 <div className="d-flex justify-content-center">
                   {/*   <Card.Text>{product.description}</Card.Text> */}
                   </div>
@@ -69,10 +75,11 @@ function Product() {
           </Col>
 
         ))}
+        </div>
       </Row>
 
     </Container>
 
   );
 }
-export default Product;
+export default ProductScroll;
