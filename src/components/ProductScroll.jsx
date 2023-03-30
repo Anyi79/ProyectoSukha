@@ -5,10 +5,11 @@ import { BsHeartFill } from 'react-icons/bs';
 import "../Style/Product.css";
 import { useState, useEffect } from 'react';
 import React from "react";
+import '../Style/ProductScroll.css';
 
-
-function ProductScroll() {
-  const { products } = useLoaderData();
+function ProductScroll({products}) {
+  
+  console.log(products)
   
   const cartProducts = JSON.parse(localStorage.getItem("cartProducts")) || [];
 
@@ -45,18 +46,18 @@ function ProductScroll() {
   const cardWidth = windowSize >= 1200 ? '20rem' : '20rem';
   const cardHeight = windowSize >= 1200 ? '20rem' : '28rem';
 
-  return (
-    <Container>
+    return (
       <Row className="d-flex flex-wrap justify-content-center">
-      <h2>Mis productos</h2>
-      <div style={{ overflowX: "scroll" }}>
-        {products.map((product) => (
+        <div style={{ marginTop:'50px', marginLeft: '80px'}} className="text-right">
+  <h2 id="Novedades" >Nuestras novedades</h2>
+  </div>
+  <div style={{ display: 'flex', overflowX: 'auto'}}> 
+  {products.map((product) => (
           <Col md={12 / showNumProducts} key={product.id} className="custom-col">
-            <Card className="custom-card" style={{ width: cardWidth, height: cardHeight, margin: '30px 1em' }}>
+            <Card className="custom-card" style={{ width: cardWidth, height: cardHeight, margin: '30px 1em',  borderRadius: '0' }}>
               <div className="d-flex justify-content-center" style={{ marginTop: '30px' }} >
                 <Card.Title>{product.name}</Card.Title>
-              </div>
-              {/* <Card.Img variant="top" src={`data:image/png;base64,${products.content}`} class="card-img-top rounded img-fluid" style={{ height: '12rem' }} /> */}
+              </div><Card.Img variant="top" src={`data:image/png;base64,${products.content}`} class="card-img-top rounded img-fluid" style={{ height: '12rem' }} />
               <Card.Body>
                 <div className="d-flex justify-content-center">
                   {/*   <Card.Text>{product.description}</Card.Text> */}
@@ -68,18 +69,20 @@ function ProductScroll() {
                   <Button variant="outline-primary" style={{ backgroundColor: 'transparent', border: 'none', color: '#511A29', '1.5rem': '1.2rem' }} href={`/productInfo/${product.id}`}>Mas Info</Button>
                 </div>
                 <div className="d-flex justify-content-center" style={{ marginBottom: '20px' }}>
-                  <Button variant="primary" style={{ backgroundColor: '#511A29', border: 'none', '1.5rem': '1.2rem' }} onClick={() => addToCart(product, 1)}>Añadir a la cesta</Button>
+                  <Button variant="primary" style={{ backgroundColor: '#511A29', border: 'none', '1.5rem': '1.2rem',  borderRadius: '0' }} onClick={() => addToCart(product, 1)}>Añadir a la cesta</Button>
                 </div>
               </Card.Footer>
             </Card>
           </Col>
 
-        ))}
-        </div>
-      </Row>
+    
+  ))}
+  </div>
 
-    </Container>
+</Row>
 
-  );
-}
-export default ProductScroll;
+  
+    );
+  }
+  export default ProductScroll;
+  

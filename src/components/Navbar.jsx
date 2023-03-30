@@ -79,7 +79,7 @@ function NavScroll() {
                   <Nav>
                     <Nav.Link href="/productList/aceites" style={{ color: '#511A29' }}>Aceites</Nav.Link>
                     <Nav.Link href="/productList/minerales" style={{ color: '#511A29' }}>Minerales</Nav.Link>
-                    <Nav.Link href="/productList/accesorios" style={{ color: '#511A29' }}>Accesorios</Nav.Link>
+                    <Nav.Link href="/productList/accesorios" style={{ color: '#511A29' }}></Nav.Link>
                   </Nav>
                 </Col>
                 </Navbar.Collapse>
