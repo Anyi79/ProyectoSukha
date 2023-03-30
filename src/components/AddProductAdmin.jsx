@@ -5,7 +5,6 @@ import ProductHandlerAPI from '../handlers/productHandlerAPI';
 import Button from 'react-bootstrap/Button';
 import { Link } from 'react-router-dom';
 import '../../src/index.css';
-import '../Style/Form.css';
 
 function AddProductAdmin() {
 
