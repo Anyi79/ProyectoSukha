@@ -6,15 +6,18 @@ import { useLoaderData } from 'react-router-dom';
 
 
 function EditProduct() {
-/* const [previewImage, setPreviewImage] = useState(null); */
-  const [name, setName] = useState('product.name');
-const [category, setCategory] = useState('product.category'); 
-  const [price, setPrice] = useState('product.price');
-  const [brand, setBrand] = useState('product.brand');
-const [description, setDescription] = useState('product.description');
-/*   const [stock, setStock] = useState('');  */
-const { product } = useLoaderData();
+  const { product } = useLoaderData();
+console.log(product)
 const id = product.id;
+
+/* const [previewImage, setPreviewImage] = useState(null); */
+  const [name, setName] = useState(product.name);
+/* const [category, setCategory] = useState('product.category');  */
+  const [price, setPrice] = useState(product.price);
+  const [brand, setBrand] = useState(product.brand);
+/* const [description, setDescription] = useState('product.description'); */
+/*   const [stock, setStock] = useState('');  */
+
  
 /* const handleImageChange = (e) => {
     const selectedImage = e.target.files[0];
@@ -34,10 +37,10 @@ const id = product.id;
     setName(nameInput);
 };
 
-  const handleCategoryChange = (event) => {
+/*   const handleCategoryChange = (event) => {
     let categoryInput = event.target.value;
     setCategory(categoryInput);
-  };
+  }; */
 
   const handlePriceChange = (event) => {
     let priceInput = event.target.value;
@@ -47,9 +50,9 @@ const id = product.id;
   const handleBrandChange = (event) => {
     setBrand(event.target.value);
   };
-  const handleDescriptionChange = (event) => {
+/*   const handleDescriptionChange = (event) => {
     setDescription(event.target.value);
-  };
+  }; */
 
 /*   const handleStockChange = (event) => {
     setStock(event.target.value);
@@ -57,7 +60,7 @@ const id = product.id;
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    let updateProduct = { name,price, brand };
+    let updateProduct = {id,name,price, brand};
 
     productsHandler.updateProduct(updateProduct);
   };
@@ -77,38 +80,38 @@ const id = product.id;
       )}
     </Form.Group> */}
 
-      <Form.Group controlId="productName">
+      <Form.Group >
         <Form.Label>Producto</Form.Label>
-        <Form.Control type="text" placeholder="Ingresa el nombre del producto"  onChange={handleNameChange} />
+        <Form.Control type="text" placeholder= {product.name}  onChange={handleNameChange} />
       </Form.Group>
 
 
-
-      <Form.Group controlId="productCategory">
+{/* 
+      <Form.Group >
         <Form.Label>Categoría del producto</Form.Label>
         <Form.Control as="textarea" rows={3} placeholder="Ingresa la categoría del producto"  onChange={handleCategoryChange} />
-      </Form.Group>
+      </Form.Group> */}
 
 
-      <Form.Group controlId="productBrand">
+      <Form.Group >
         <Form.Label>Marca del producto</Form.Label>
-        <Form.Control as="textarea" rows={3} placeholder="Ingresa la marca del producto"  onChange={handleBrandChange} />
+        <Form.Control as="textarea" rows={3} placeholder= {product.brand}  onChange={handleBrandChange} />
       </Form.Group>
 
-      <Form.Group controlId="productDescription">
+      {/* <Form.Group >
         <Form.Label>Descripción del producto</Form.Label>
         <Form.Control as="textarea" rows={3} placeholder="Ingresa la descripción del producto"  onChange={handleDescriptionChange} />
       </Form.Group>
-
+ */}
     
-      <Form.Group controlId="productPrice">
+      <Form.Group >
         <Form.Label>Precio del producto</Form.Label>
-        <Form.Control type="number" placeholder="Ingresa el precio del producto" onChange={ handlePriceChange} />
+        <Form.Control type="number" placeholder={product.price} onChange={ handlePriceChange} />
       </Form.Group>
 
 
-      <Button variant="primary" type="submit"  style={{ backgroundColor: '#511A29', border: 'none', '1.5rem' : '1.2rem' }}>
-        Agregar producto
+      <Button variant="primary" type="submit" Submit style={{ backgroundColor: '#511A29', border: 'none', '1.5rem' : '1.2rem' }}>
+        Editar
       </Button>
     </Form>
   );

@@ -87,9 +87,9 @@ export const router = createBrowserRouter([
 
                     }, 
                     {
-                        path: '/editProduct/',
+                        path: '/editProduct/:id',
                         element: <EditProduct />,
-                        loader: fetchProducts
+                        loader: fetchProduct
                       
 
                     },
@@ -200,4 +200,7 @@ async function fetchOrders() {
 async function fetchOrder({ params }) {
     const Order = await OrderHandlerAPI.loadOrder(params.id);
     return { Order };
+    const product = await productsHandler.loadProduct(params.id);
+    console.log("hola");
+    return { product };
 }
