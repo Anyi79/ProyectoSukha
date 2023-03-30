@@ -10,7 +10,6 @@ function Root() {
     return (
         <>
             <NavScroll />
-            <RegisterForm />
             <Outlet />
             
           

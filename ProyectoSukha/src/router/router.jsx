@@ -3,6 +3,7 @@ import Root from "./Root";
 import Landing from "../Pages/Landing";
 import NotFound from "../Pages/NotFound";
 import ProductList from "../Pages/ProductList";
+import Register from "../Pages/Register";
 
 export const router = createBrowserRouter([
     {
@@ -56,6 +57,12 @@ export const router = createBrowserRouter([
                     {
                         path: '/productList/accesorios',
                         element: <ProductList />,
+                        
+
+                    },
+                    {
+                        path: '/registro',
+                        element: <Register />,
                         
 
                     },
