@@ -1,0 +1,148 @@
+#RegisterFormTitleLabel {
+    background-color: #511A29;
+    width: auto;
+    height: auto;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+#RegisterFormText {
+    color: white;
+    font-family: 'Qwitcher Grypen';
+    font-size: 6.25rem;
+    margin-left: 10%;
+}
+
+#RegisterFormContainer {
+    background-color: #7E6268;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 10%;
+    display: flex;
+    flex-direction: column;
+}
+
+#InputContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+
+}
+
+#RFSection1 {
+    margin-bottom: 2%;
+    width: 37.5rem;
+    border-bottom: 0.5px solid white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#RFSection2 {
+    margin-bottom: 2%;
+    width: 37.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#RFSection3 {
+    display: flex;
+    justify-content: space-between;
+    width: 37.5rem;
+}
+
+#RegisterFormP1 {
+    color: white;
+    font-family: 'Prociono', serif;
+    padding-left: 19%;
+    padding-top: 5%;
+    font-size: .875rem;
+}
+
+#RegisterFormP {
+    color: white;
+    font-family: 'Prociono', serif;
+    padding: 5%;
+
+}
+
+#RegisterFormPBottom {
+    color: white;
+    font-family: 'Prociono', serif;
+    padding: 5%;
+}
+
+#RegisterFormBTN {
+    background-color: #511A29;
+    font-family: 'Prociono', serif;
+    width: 12.5rem;
+    height: 3.125rem;
+    margin: 2%;
+    font-size: 1.875rem;
+    
+}
+
+.RegisterFormInput {
+    margin: .3125rem;
+    margin-bottom: 10%;
+    width: 18.75rem;
+    height: 2.5rem;
+    background-color: #D6C6B4;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom: 4px solid #511A29;
+}
+
+.RegisterFormSubSection {
+    margin-right: 20%;
+}
+
+::placeholder {
+    padding: 5%;
+    color: #511A29;
+    font-family: 'Prociono', serif;
+}
+
+
+@media only screen and (max-width: 750px) { 
+    #RFSection1 {
+        margin-bottom: 2%;
+        border-bottom: 0.5px solid white;
+        width: 12.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #RFSection2 {
+        margin-bottom: 2%;
+        width: 12.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #RFSection3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 37.5rem;
+    }
+
+    .RegisterFormSubSection {
+        margin: 0%;
+       
+    }
+
+    #RFinput2 {
+        order: -1;
+    }
+
+}

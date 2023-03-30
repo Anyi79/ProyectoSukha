@@ -4,18 +4,19 @@ import Landing from "../Pages/Landing";
 import NotFound from "../Pages/NotFound";
 import ProductList from "../Pages/ProductList";
 import ProductInfo from "../components/ProductInfo";
-import ProductHandlerAPI from "../handlers/productHandler";
-import OrderHandlerAPI from "../handlers/orderHandler";
-import CustomerHandlerAPI from "../handlers/customerHandler";
-import CustomerTypeHandlerAPI from "../handlers/customerTypeHandler";
-import UserHandlerAPI from "../handlers/userHandler";
-import PersonHandlerAPI from "../handlers/personHandler";
+import ProductHandlerAPI from "../handlers/productHandlerAPI";
+//import OrderHandlerAPI from "../handlers/orderHandler";
+//import CustomerHandlerAPI from "../handlers/customerHandler";
+//import CustomerTypeHandlerAPI from "../handlers/customerTypeHandler";
+import UserHandlerAPI from "../handlers/userHandlerAPI";
+//mport PersonHandlerAPI from "../handlers/personHandler";
 import AddProduct from "../Pages/AddProduct";
 import ShopCart from "../Pages/ShopCart";
 import AdminAddProduct from "../Pages/AdminAddProduct";
 import Admin from "../Pages/Admin";
 import AdminUser from "../Pages/AdminUser";
 import LoginPage from "../Pages/LoginPage";
+import Register from "../Pages/Register";
 
 export const router = createBrowserRouter([
     {
@@ -48,6 +49,10 @@ export const router = createBrowserRouter([
                         path: '/login/',
                         element: <LoginPage />,
                         loader: fetchUser,
+                    },
+                    {
+                        path: '/register/',
+                        element: <Register />,
                     },
                     {
                         path: '/productList/',
