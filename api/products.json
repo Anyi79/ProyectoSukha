@@ -5,7 +5,8 @@
     "imgUrl": "../Img/piedrasRosas.jpg",
     "quantity": 1,
     "description": "Velas perfumadas de invierno",
-    "price": "2"
+    "price": "2",
+    "brand": "Litle"
 },
 {
 
@@ -13,14 +14,16 @@
     "name":"Velas perfumadas de invierno",
     "quantity": 2,
     "description": "Velas perfumadas de invierno",
-    "price": "2"
+    "price": "2",
+    "brand": "kitty"
 },{
 
     "id": "3" ,
     "name":"Velas perfumadas de invierno",
     "quantity": 1,
     "description": "Velas perfumadas de invierno",
-    "price": "2"
+    "price": "2",
+    "brand": "Petit"
 }
 ]
 }

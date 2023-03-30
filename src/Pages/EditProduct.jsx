@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { useLoaderData } from 'react-router-dom';
 
 
-function EditForm() {
+function EditProduct() {
 /* const [previewImage, setPreviewImage] = useState(null); */
   const [name, setName] = useState('product.name');
 const [category, setCategory] = useState('product.category'); 
@@ -60,7 +60,7 @@ const id = product.id;
     let updateProduct = { name,price, brand };
 
     productsHandler.updateProduct(updateProduct);
-  }
+  };
 
 
   return (
@@ -114,4 +114,4 @@ const id = product.id;
   );
 }
  
-export default EditForm;
+export default EditProduct;

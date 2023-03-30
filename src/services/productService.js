@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const apiClient = axios.create({
-  baseURL: 'http://localhost:3000',
+  baseURL: 'https://localhost:7204',
   withCredentials: false,
   headers: {
     Accept: 'application/json',
@@ -11,7 +11,7 @@ const apiClient = axios.create({
 
 export const productService = {
   async getProducts() {
-    let response = await apiClient.get("/products");
+    let response = await apiClient.get("Product /GetAll");
     console.log(response.data);
     return response.data;
 

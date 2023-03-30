@@ -8,6 +8,7 @@ import { productsHandler } from "../handlers/productHandler";
 import AddProduct from "../Pages/AddProduct";
 import ShopCart from "../Pages/ShopCart";
 import AdminView from "../Pages/AdminView";
+import EditProduct from "../Pages/EditProduct";
 
 
 
@@ -49,9 +50,18 @@ export const router = createBrowserRouter([
                     {
                         path: '/adminView/',
                         element: <AdminView />,
+                        loader: fetchProducts
                       
 
                     }, 
+                    {
+                        path: '/editProduct/',
+                        element: <EditProduct />,
+                        loader: fetchProducts
+                      
+
+                    },
+
 
                    /* {
                         path: '/productList/sahumerios',

@@ -4,14 +4,18 @@ import { BsHeartFill } from 'react-icons/bs';
 import "../Style/AdminView.css";
 import { useState, useEffect } from 'react';
 import React from "react";
-import { ListGroup, ListGroupItem } from 'react-bootstrap';
+import { productsHandler } from '../handlers/productHandler';
 
 function AdminView() {
-  const [products, setProducts] = useState([]);
+  const { products } = useLoaderData();
 
   const handleAddProduct = () => {
     // Aquí deberías añadir la lógica para agregar un nuevo producto a la lista
   };
+
+  async function deleteProduct (id) {
+    await productsHandler.deleteProduct(id) 
+  }
 
   return (
     <Container>
@@ -28,26 +32,31 @@ function AdminView() {
         </Card>
       </Col>
       <Col>
-        <h2>Lista de productos</h2>
-        <Button onClick={handleAddProduct}>Agragar producto</Button>
+        <Button  href="/addProduct" >Agragar producto</Button>
         <Table striped bordered hover>
           <thead>
             <tr>
               <th>ID</th>
               <th>Producto</th>
-              <th>Categoría</th>
+              <th>Price</th>
               <th>Estado</th>
-              <th>Opciones</th>
+              <th>Marca</th>
             </tr>
           </thead>
           <tbody>
             {products.map((product) => (
               <tr key={product.id}>
                 <td>{product.id}</td>
-                <td>{product.category}</td>
                 <td>{product.name}</td>
-                <td>{product.state}</td>
+                <td>{product.price} €</td>
+                <td>{}</td>
+                <td>{product.brand}</td>
                 <td>Opciones</td>
+                <div className="d-flex justify-content-right">
+                <Button variant="primary"  href="/editProduct" style={{ backgroundColor: '#511A29', border: 'none', '1.5rem': '1.2rem', marginTop: '15px', borderRadius: '0' }} >Editar</Button>
+                <Button variant="primary" style={{ backgroundColor: '#511A29', border: 'none', '1.5rem': '1.2rem', marginTop: '15px', borderRadius: '0' }} onClick={() => deleteProduct(product.id)}>Eliminar Producto</Button>
+                
+               </div>
               </tr>
             ))}
           </tbody>
