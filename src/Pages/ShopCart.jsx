@@ -17,6 +17,11 @@ const ShopCart = () => {
     localStorage.removeItem("cartProducts");
     setCartProducts([]);
   }
+  const handleRemove = (id) => {
+    const array =cartProducts.filter((product) => product.id !== id);
+    setCartProducts(array);
+    localStorage.setItem("cartProducts", JSON.stringify(array));
+};
   const quantity = cartProducts.reduce((acc, product) => {
     return acc + product.quantity;
   },0);
@@ -38,11 +43,12 @@ const totalWithTaxes = getTotalWithTaxes(subTotal, impuestos);
 
   return (
     <div>
-      <Container>
+      <Container id="Shop" >
         <Row>
           <Col md={8}  >
             {cartProducts.map((product) => {
               return (
+                <div>
                 <Card key={product.id}>
                   <Card.Body style={{ borderRadius: '0',  border: ' none', backgroundColor: '#7E6268',color:'white'}}>
                     <Row>
@@ -58,16 +64,20 @@ const totalWithTaxes = getTotalWithTaxes(subTotal, impuestos);
                           <Col><Button variant="primary " size="lg" style={{ backgroundColor: 'transparent', border: 'none' }}>
                       < FaRegHeart style={{ backgroundColor: 'none', color: '#511A29', size: '2em' }} />
                     </Button></Col>
+                    <div className="d-flex justify-content-right">
+                <Button variant="primary"  style={{ backgroundColor: '#511A29', border: 'none', '1.5rem': '1.2rem', marginTop: '15px', borderRadius: '0' }} onClick={() => handleRemove(product.id)}>Eliminar Producto</Button>
+                </div>
                           
                         </Row>
                       </Col>
                     </Row>
                   </Card.Body>
                 </Card>
+                </div>
               )
             })}
              <div className="d-flex justify-content-right">
-                <Button variant="primary"  style={{ backgroundColor: '#511A29', border: 'none', '1.5rem': '1.2rem', marginTop: '15px' }} onClick={() => removeCartProducts()}>Vaciar Carrito</Button>
+                <Button variant="primary"  style={{ backgroundColor: '#511A29', border: 'none', '1.5rem': '1.2rem', marginTop: '15px', borderRadius: '0', }} onClick={() => removeCartProducts()}>Vaciar Carrito</Button>
                 </div>
           </Col>
           <Col md={4}>
@@ -88,7 +98,7 @@ const totalWithTaxes = getTotalWithTaxes(subTotal, impuestos);
                   <Col md={4}><strong>{totalWithTaxes} €</strong></Col>
                 </Row>
                 <div className="d-flex justify-content-center">
-    <Button variant="primary" style={{ backgroundColor: '#511A29', border: 'none', '1.5rem': '1.2rem', marginTop: '15px' }}>Comprar</Button>
+    <Button variant="primary" style={{ backgroundColor: '#511A29', border: 'none', '1.5rem': '1.2rem', marginTop: '15px', borderRadius: '0',}}>Comprar</Button>
   </div>
   </Card.Body>
   <Card style={{backgroundColor: '#D6C6B4', border: ' none', borderRadius: '0'}}>

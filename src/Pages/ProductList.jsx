@@ -6,7 +6,7 @@ import Product from "../components/Product";
 
 function ProductList() {
   const { products } = useLoaderData();
-  console.log(products);
+  
   return (
     <>
       <Product/>
