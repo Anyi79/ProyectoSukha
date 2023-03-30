@@ -7,6 +7,7 @@ import ProductInfo from "../components/ProductInfo";
 import { productsHandler } from "../handlers/productHandler";
 import AddProduct from "../Pages/AddProduct";
 import ShopCart from "../Pages/ShopCart";
+import AdminView from "../Pages/AdminView";
 
 
 
@@ -42,6 +43,12 @@ export const router = createBrowserRouter([
                      {
                         path: '/addProduct/',
                         element: <AddProduct />,
+                      
+
+                    }, 
+                    {
+                        path: '/adminView/',
+                        element: <AdminView />,
                       
 
                     }, 

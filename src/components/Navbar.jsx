@@ -55,7 +55,7 @@ function NavScroll() {
               <div className="d-flex" style={{ marginBottom: '-10px' }}>
               <Navbar.Collapse id="navbarScroll">
                 
-                    <Button variant="primary " size="lg" style={{ backgroundColor: 'transparent', border: 'none' }}>
+                    <Button variant="primary " size="lg" href="/adminView" style={{ backgroundColor: 'transparent', border: 'none' }}>
                       < BsSearch style={{ backgroundColor: 'none', color: '#511A29', size: '2em' }} />
                     </Button>
                     <Button variant="primary " size="lg" href="/addProduct" style={{ backgroundColor: 'transparent', border: 'none' }}>

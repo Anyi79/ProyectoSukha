@@ -21,10 +21,6 @@ const ShopCart = () => {
     return acc + product.quantity;
   },0);
 
-/*    const SubTotalProduct = (quantity, product)=>{
-    return product.quantity * product.price;
-   }
- */
   const subTotal = cartProducts.reduce((acc, product) => {
     return acc + (product.quantity * product.price);
   }, 0);
