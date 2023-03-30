@@ -56,9 +56,9 @@ export const router = createBrowserRouter([
 
                     }, 
                     {
-                        path: '/editProduct/',
+                        path: '/editProduct/:id',
                         element: <EditProduct />,
-                        loader: fetchProducts
+                        loader: fetchProduct
                       
 
                     },
@@ -120,5 +120,6 @@ async function fetchProducts() {
 
 async function fetchProduct({ params }) {
     const product = await productsHandler.loadProduct(params.id);
+    console.log("hola");
     return { product };
 }
