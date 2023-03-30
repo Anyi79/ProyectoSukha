@@ -4,13 +4,13 @@ import Navbar from "../components/Navbar";
 import Login from "../components/Login";
 
 
-export default function Login() {
+export default function LoginPage() {
 
-return (
-<>
+    return (
+    <>
 
-    <Login/>
-    <Footer/>
-</>
-);
-}
+        <Login />
+        <Footer />
+    </>
+    );
+    }

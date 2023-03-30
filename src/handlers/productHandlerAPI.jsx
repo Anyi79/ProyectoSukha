@@ -35,7 +35,7 @@ const ProductHandlerAPI = {
         return ProductServiceAPI.deleteProduct(id);
     },
     updatePhoto(id, updatedProduct){
-        if (!updatedPhoto) {
+        if (!updatedProduct) {
             return;
         }
 
@@ -56,7 +56,7 @@ const ProductHandlerAPI = {
         }
         console.log(updatedProductStructure)
 
-        return ProductServiceAPI.updatePhoto(id, updatedProductStructure);
+        return ProductServiceAPI.updateProduct(id, updatedProductStructure);
     },
 }
 
