@@ -16,6 +16,10 @@ import AdminAddProduct from "../Pages/AdminAddProduct";
 import Admin from "../Pages/Admin";
 import AdminUser from "../Pages/AdminUser";
 import LoginPage from "../Pages/LoginPage";
+import AdminView from "../Pages/AdminView";
+import EditProduct from "../Pages/EditProduct";
+
+
 
 export const router = createBrowserRouter([
     {
@@ -74,6 +78,21 @@ export const router = createBrowserRouter([
                       
 
                     }, 
+                    {
+                        path: '/adminView/',
+                        element: <AdminView />,
+                        loader: fetchProducts
+                      
+
+                    }, 
+                    {
+                        path: '/editProduct/',
+                        element: <EditProduct />,
+                        loader: fetchProducts
+                      
+
+                    },
+
 
                    /* {
                         path: '/productList/sahumerios',
