@@ -27,14 +27,14 @@ const UserServiceAPI = {
 },
   async submitUser(newUser){
       try {
-         const response = await apiClient.post("/User/Post", newUser);
+         const response = await apiClient.post("/Post", newUser);
          return response.data;
       } catch (error) {
          console.error(error);
       }
    },
   async deleteUser(id){
-      await apiClient.delete(`/User/Delete?id=${id}`)
+      await apiClient.delete(`/Delete?id=${id}`)
   },
   async updateUser(id, updatedUser){
       await apiClient.patch(`/UpdateUser?id=${id}`, updatedUser)

@@ -5,11 +5,14 @@ const UserHandlerAPI = {
         console.log(newUser)
     
         let user = { 
-            "User": newUser.user,
+            "User": newUser.email.split("@")[0],
             "Password": newUser.password,
+            "IdRol":2,
             "InsertDate": new Date(),
             "UpdateDate": new Date(),
             "IsActive": true,
+            "IdPerson": newUser.idPerson,
+            "Id":""
 
         }
         console.log(user)

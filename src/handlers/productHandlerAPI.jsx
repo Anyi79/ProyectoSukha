@@ -31,10 +31,10 @@ const ProductHandlerAPI = {
     loadProduct(id) {
         return ProductServiceAPI.getProduct(id);
     },
-    deletePhoto(id){
+    deleteProduct(id){
         return ProductServiceAPI.deleteProduct(id);
     },
-    updatePhoto(id, updatedProduct){
+    updateProduct(id, updatedProduct){
         if (!updatedProduct) {
             return;
         }

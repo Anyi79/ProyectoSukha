@@ -27,14 +27,14 @@ const CustomerServiceAPI = {
 },
   async submitCustomer(newCustomer){
       try {
-         const response = await apiClient.post("/Customer/Post", newCustomer);
+         const response = await apiClient.post("/Post", newCustomer);
          return response.data;
       } catch (error) {
          console.error(error);
       }
    },
   async deleteCustomer(id){
-      await apiClient.delete(`/Customer/Delete?id=${id}`)
+      await apiClient.delete(`/Delete?id=${id}`)
   },
   async updateCustomer(id, updatedOrder){
       await apiClient.patch(`/UpdateCuustomer?id=${id}`, updatedCustomer)

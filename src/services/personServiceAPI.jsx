@@ -22,14 +22,14 @@ const PersonServiceAPI = {
   },
   async submitPerson(newPerson){
       try {
-         const response = await apiClient.post("/Person/Post", newPerson);
+         const response = await apiClient.post("/Post", newPerson);
          return response.data;
       } catch (error) {
          console.error(error);
       }
    },
   async deletePerson(id){
-      await apiClient.delete(`/Person/Delete?id=${id}`)
+      await apiClient.delete(`/Delete?id=${id}`)
   },
   async updatePerson(id, updatedPerson){
       await apiClient.patch(`/UpdatePerson?id=${id}`, updatedPerson)

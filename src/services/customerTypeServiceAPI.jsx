@@ -22,14 +22,14 @@ const CustomerTypeServiceAPI = {
   },
   async submitCustomerType(newCustomerType){
       try {
-         const response = await apiClient.post("/CustomerType/Post", newCustomerType);
+         const response = await apiClient.post("/Post", newCustomerType);
          return response.data;
       } catch (error) {
          console.error(error);
       }
    },
   async deleteCustomerType(id){
-      await apiClient.delete(`/CustomerType/Delete?id=${id}`)
+      await apiClient.delete(`/Delete?id=${id}`)
   },
   async updateCustomerType(id, updatedOrder){
       await apiClient.patch(`/UpdateCustomerType?id=${id}`, updatedCustomerType)

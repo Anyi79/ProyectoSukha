@@ -47,14 +47,14 @@ async getOrdersByDelivered() {
 },
   async submitOrder(newOrder){
       try {
-         const response = await apiClient.post("/Order/Post", newOrder);
+         const response = await apiClient.post("/Post", newOrder);
          return response.data;
       } catch (error) {
          console.error(error);
       }
    },
   async deleteOrder(id){
-      await apiClient.delete(`/Order/Delete?id=${id}`)
+      await apiClient.delete(`/Delete?id=${id}`)
   },
   async updateOrder(id, updatedOrder){
       await apiClient.patch(`/UpdateOrder?id=${id}`, updatedOrder)

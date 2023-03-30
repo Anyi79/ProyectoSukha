@@ -22,14 +22,14 @@ const RolServiceAPI = {
   },
   async submitRol(newRol){
       try {
-         const response = await apiClient.post("/Rol/Post", newRol);
+         const response = await apiClient.post("/Post", newRol);
          return response.data;
       } catch (error) {
          console.error(error);
       }
    },
   async deleteRol(id){
-      await apiClient.delete(`/Rol/Delete?id=${id}`)
+      await apiClient.delete(`/Delete?id=${id}`)
   },
   async updateRol(id, updatedRol){
       await apiClient.patch(`/UpdateRol?id=${id}`, updatedRol)
