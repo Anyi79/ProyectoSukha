@@ -65,7 +65,7 @@ function NavScroll() {
                   
                     </Navbar.Collapse>
                   
-                    <Button variant="primary " size="lg" style={{ backgroundColor: 'transparent', border: 'none' }}>
+                    <Button variant="primary " size="lg" style={{ backgroundColor: 'transparent', border: 'none' }}  href="/productList">
                       < FaRegHeart style={{ backgroundColor: 'none', color: '#511A29', size: '2em' }} />
                     </Button>
                     <Button variant="primary "  size="lg" href="/shopCart/" style={{ backgroundColor: 'transparent', border: 'none' }}>
