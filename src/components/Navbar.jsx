@@ -16,6 +16,7 @@ import { useState, useEffect } from 'react';
 
 
 
+
 function NavScroll() {
 
   return (
@@ -58,7 +59,7 @@ function NavScroll() {
                     <Button variant="primary " size="lg" href="/adminView" style={{ backgroundColor: 'transparent', border: 'none' }}>
                       < BsSearch style={{ backgroundColor: 'none', color: '#511A29', size: '2em' }} />
                     </Button>
-                    <Button variant="primary " size="lg" href="/addProduct" style={{ backgroundColor: 'transparent', border: 'none' }}>
+                    <Button variant="primary " size="lg" href="/adminView" style={{ backgroundColor: 'transparent', border: 'none' }}>
                       < BsPerson style={{ backgroundColor: 'none', color: '#511A29', size: '2em' }} />
                     </Button>
                   
