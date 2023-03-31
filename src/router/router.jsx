@@ -4,7 +4,8 @@ import Landing from "../Pages/Landing";
 import NotFound from "../Pages/NotFound";
 import ProductList from "../Pages/ProductList";
 import ProductInfo from "../components/ProductInfo";
-//import ProductHandlerAPI from "../handlers/productHandler";
+//import { productsHandler } from "../handlers/productHandler";
+import ProductHandlerAPI from "../handlers/productHandlerAPI";
 //import OrderHandlerAPI from "../handlers/orderHandler";
 //import CustomerHandlerAPI from "../handlers/customerHandler";
 //import CustomerTypeHandlerAPI from "../handlers/customerTypeHandler";
@@ -15,7 +16,7 @@ import ShopCart from "../Pages/ShopCart";
 import AdminAddProduct from "../Pages/AdminAddProduct";
 import Admin from "../Pages/Admin";
 import AdminUser from "../Pages/AdminUser";
-import LoginPage from "../Pages/LoginPage";
+//import LoginPage from "../Pages/LoginPage";
 import AdminView from "../Pages/AdminView";
 import EditProduct from "../Pages/EditProduct";
 
@@ -47,13 +48,12 @@ export const router = createBrowserRouter([
                     {
                         path: '/user/:id',
                         element: <AdminUser />,
-                        loader: fetchUser,
+                        //loader: fetchUser,
                     },
-                    {
+                    /*{
                         path: '/login/',
                         element: <LoginPage />,
-                        loader: fetchUser,
-                    },
+                    },*/
                     {
                         path: '/productList/',
                         element: <ProductList />,
@@ -152,7 +152,7 @@ async function fetchProduct({ params }) {
     return { Product };
 }
 
-async function fetchUsers() {
+/*async function fetchUsers() {
     const Users = await UserHandlerAPI.loadUsers();
     return { Users };
 }
@@ -200,4 +200,4 @@ async function fetchOrders() {
 async function fetchOrder({ params }) {
     const Order = await OrderHandlerAPI.loadOrder(params.id);
     return { Order };
-}
+}*/

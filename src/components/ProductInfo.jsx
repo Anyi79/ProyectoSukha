@@ -5,7 +5,7 @@ import { BsHeartFill } from 'react-icons/bs';
 import { BsTrashFill } from 'react-icons/bs';
 import "../Style/ProductInfo.css";
 import { BsFillPencilFill } from "react-icons/bs";
-import { productsHandler } from '../handlers/productHandler';
+import ProductHandlerAPI from '../handlers/productHandlerAPI';
 
 
 
@@ -15,7 +15,7 @@ function ProductInfo() {
   const { product } = useLoaderData();
 
   async function deleteProduct (id) {
-    await productsHandler.deleteProduct(id) 
+    await ProductHandlerAPI.deleteProduct(id) 
   }
 
   return (

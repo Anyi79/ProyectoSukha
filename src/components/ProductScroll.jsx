@@ -5,11 +5,25 @@ import { BsHeartFill } from 'react-icons/bs';
 import "../Style/Product.css";
 import { useState, useEffect } from 'react';
 import React from "react";
+import ProductHandlerAPI from "../handlers/productHandlerAPI";
 import '../Style/ProductScroll.css';
 
-function ProductScroll({products}) {
+function ProductScroll() {
+
+  const [products, setProducts] = useState([]);
+
+
+    useEffect(() => {
+        getData();
+      }, []);
+
+      const getData = async () => {
+        const data = await ProductHandlerAPI.loadProducts();
+        setProducts(data);
+      };
   
-  console.log(products)
+  console.log(products);  
+  
   
   const cartProducts = JSON.parse(localStorage.getItem("cartProducts")) || [];
 
@@ -52,12 +66,12 @@ function ProductScroll({products}) {
   <h2 id="Novedades" >Nuestras novedades</h2>
   </div>
   <div style={{ display: 'flex', overflowX: 'auto'}}> 
-  {products.map((product) => (
+  {products.filter(product => product.isActive === true).map((product) => (
           <Col md={12 / showNumProducts} key={product.id} className="custom-col">
             <Card className="custom-card" style={{ width: cardWidth, height: cardHeight, margin: '30px 1em',  borderRadius: '0' }}>
               <div className="d-flex justify-content-center" style={{ marginTop: '30px' }} >
                 <Card.Title>{product.name}</Card.Title>
-              </div><Card.Img variant="top" src={`data:image/png;base64,${products.content}`} class="card-img-top rounded img-fluid" style={{ height: '12rem' }} />
+              </div><Card.Img variant="top" src={`data:image/png;base64,${product.content}`} class="card-img-top rounded img-fluid" style={{ height: '12rem' }} />
               <Card.Body>
                 <div className="d-flex justify-content-center">
                   {/*   <Card.Text>{product.description}</Card.Text> */}

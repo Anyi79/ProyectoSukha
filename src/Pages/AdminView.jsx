@@ -5,6 +5,7 @@ import "../Style/AdminView.css";
 import { useState, useEffect } from 'react';
 import React from "react";
 import { productsHandler } from '../handlers/productHandler';
+import ProductHandlerAPI from '../handlers/productHandlerAPI'
 
 function AdminView() {
   const { products } = useLoaderData();
@@ -14,7 +15,7 @@ function AdminView() {
   };
 
   async function deleteProduct (id) {
-    await productsHandler.deleteProduct(id) 
+    await ProductHandlerAPI.deleteProduct(id) 
   }
 
   return (

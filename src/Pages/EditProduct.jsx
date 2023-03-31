@@ -16,7 +16,7 @@ const [description, setDescription] = useState('product.description');
 const { product } = useLoaderData();
 const id = product.id;
  
-/* const handleImageChange = (e) => {
+const handleImageChange = (e) => {
     const selectedImage = e.target.files[0];
     const imageReader = new FileReader();
 
@@ -28,7 +28,7 @@ const id = product.id;
       imageReader.readAsDataURL(selectedImage);
     }
   }; 
-  */
+  
   const handleNameChange = (event) => {
     let nameInput = event.target.value;
     setName(nameInput);
@@ -65,7 +65,7 @@ const id = product.id;
 
   return (
     <Form onSubmit={handleSubmit}>
-  {/*   <Form.Group className="mb-3">
+    <Form.Group className="mb-3">
       <div className='centerText'><Form.Label>Upload Image:</Form.Label></div>
       <Form.Control
         id="StyleControl"
@@ -75,7 +75,7 @@ const id = product.id;
       {previewImage && (
         <img src={previewImage} alt="View image" />
       )}
-    </Form.Group> */}
+    </Form.Group>
 
       <Form.Group controlId="productName">
         <Form.Label>Producto</Form.Label>

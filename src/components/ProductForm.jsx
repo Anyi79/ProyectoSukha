@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { productsHandler } from '../handlers/productHandler';
+import ProductHandlerAPI from '../handlers/productHandlerAPI';
 import { Form, Button } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -10,10 +10,10 @@ const [category, setCategory] = useState('');
   const [price, setPrice] = useState('');
   const [brand, setBrand] = useState('');
 const [description, setDescription] = useState('');
-/*   const [stock, setStock] = useState('');  */
+const [stock, setStock] = useState('');
  
  
-/* const handleImageChange = (e) => {
+const handleImageChange = (e) => {
     const selectedImage = e.target.files[0];
     const imageReader = new FileReader();
 
@@ -25,7 +25,7 @@ const [description, setDescription] = useState('');
       imageReader.readAsDataURL(selectedImage);
     }
   }; 
-  */
+
   const handleNameChange = (event) => {
     setName(event.target.value);
   };
@@ -45,21 +45,21 @@ const [description, setDescription] = useState('');
     setDescription(event.target.value);
   };
 
-/*   const handleStockChange = (event) => {
+const handleStockChange = (event) => {
     setStock(event.target.value);
-  }; */
+  };
 
   const handleSubmit = (event) => {
     event.preventDefault();
     let newProduct = { name,price, brand };
 
-    productsHandler.addProduct(newProduct);
+    ProductHandlerAPI.addProduct(newProduct);
   }
 
 
   return (
     <Form onSubmit={handleSubmit}>
-  {/*   <Form.Group className="mb-3">
+    <Form.Group className="mb-3">
       <div className='centerText'><Form.Label>Upload Image:</Form.Label></div>
       <Form.Control
         id="StyleControl"
@@ -67,9 +67,9 @@ const [description, setDescription] = useState('');
         accept="image/*"
         onChange={(event) => setPreviewImage(event.target.value)} />
       {previewImage && (
-        <img src={previewImage} alt="View image" />
+        <img src={`data:image/jpg;base64,${content}`} alt="View image" />
       )}
-    </Form.Group> */}
+    </Form.Group>
 
       <Form.Group controlId="productName">
         <Form.Label>Producto</Form.Label>
