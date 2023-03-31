@@ -3,6 +3,7 @@ import { productsHandler } from '../handlers/productHandler';
 import { Form, Button } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { useLoaderData } from 'react-router-dom';
+import '../Style/EditProduct.css';
 
 
 function EditProduct() {
@@ -79,10 +80,10 @@ const id = product.id;
         <img src={previewImage} alt="View image" />
       )}
     </Form.Group> */}
-
+<div className="input-container" style={{width:'950px', height:'100px'}}>
       <Form.Group >
         <Form.Label>Producto</Form.Label>
-        <Form.Control type="text" placeholder= {product.name}  onChange={handleNameChange} />
+        <Form.Control type="text" placeholder= {product.name}  onChange={handleNameChange} style={{ border: 'none', '1.5rem': '1.2rem', borderRadius: '0', marginLeft: '20px'}}  />
       </Form.Group>
 
 
@@ -91,11 +92,9 @@ const id = product.id;
         <Form.Label>Categoría del producto</Form.Label>
         <Form.Control as="textarea" rows={3} placeholder="Ingresa la categoría del producto"  onChange={handleCategoryChange} />
       </Form.Group> */}
-
-
       <Form.Group >
-        <Form.Label>Marca del producto</Form.Label>
-        <Form.Control as="textarea" rows={3} placeholder= {product.brand}  onChange={handleBrandChange} />
+        <Form.Label >Marca del producto</Form.Label>
+        <Form.Control placeholder= {product.brand}  onChange={handleBrandChange} style={{ border: 'none', '1.5rem': '1.2rem', borderRadius: '0',  marginLeft: '20px'}} />
       </Form.Group>
 
       {/* <Form.Group >
@@ -103,14 +102,14 @@ const id = product.id;
         <Form.Control as="textarea" rows={3} placeholder="Ingresa la descripción del producto"  onChange={handleDescriptionChange} />
       </Form.Group>
  */}
-    
-      <Form.Group >
+    </div>
+      <Form.Group style={{width:'460px'}}>
         <Form.Label>Precio del producto</Form.Label>
-        <Form.Control type="number" placeholder={product.price} onChange={ handlePriceChange} />
+        <Form.Control type="number" placeholder={product.price} onChange={ handlePriceChange} style={{ border: 'none', '1.5rem': '1.2rem', borderRadius: '0',  marginLeft: '20px'}} />
       </Form.Group>
 
 
-      <Button variant="primary" type="submit" Submit style={{ backgroundColor: '#511A29', border: 'none', '1.5rem' : '1.2rem' }}>
+      <Button variant="primary" type="submit" Submit style={{ backgroundColor: '#511A29', border: 'none', '1.5rem': '1.2rem', borderRadius: '0', marginTop: '20px', marginLeft: '20px', fontSize: '20px', size: '20 px'}}>
         Editar
       </Button>
     </Form>

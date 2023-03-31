@@ -70,38 +70,38 @@ const [description, setDescription] = useState('');
         <img src={previewImage} alt="View image" />
       )}
     </Form.Group> */}
-
+      <div className="input-container" style={{width:'950px', height:'100px'}}>
       <Form.Group controlId="productName">
         <Form.Label>Producto</Form.Label>
-        <Form.Control type="text" placeholder="Ingresa el nombre del producto" value={name} onChange={handleNameChange} />
+        <Form.Control type="text" placeholder="Ingresa el nombre del producto" value={name} onChange={handleNameChange}  style={{ border: 'none', '1.5rem': '1.2rem', borderRadius: '0', marginLeft: '20px'}}/>
       </Form.Group>
 
 
-
+{/* 
       <Form.Group controlId="productCategory">
         <Form.Label>Categoría del producto</Form.Label>
         <Form.Control as="textarea" rows={3} placeholder="Ingresa la categoría del producto" value={category} onChange={handleCategoryChange} />
       </Form.Group>
-
+ */}
 
       <Form.Group controlId="productBrand">
-        <Form.Label>Marca del producto</Form.Label>
-        <Form.Control as="textarea" rows={3} placeholder="Ingresa la marca del producto" value={brand} onChange={handleBrandChange} />
+        <Form.Label style={{color:'#511A29'}}>Marca del producto</Form.Label>
+        <Form.Control as="textarea" rows={3} placeholder="Ingresa la marca del producto" value={brand} onChange={handleBrandChange}  style={{ border: 'none', '1.5rem': '1.2rem', borderRadius: '0',  marginLeft: '20px'}}/>
       </Form.Group>
 
-      <Form.Group controlId="productDescription">
+    {/*   <Form.Group controlId="productDescription">
         <Form.Label>Descripción del producto</Form.Label>
         <Form.Control as="textarea" rows={3} placeholder="Ingresa la descripción del producto" value={description} onChange={handleDescriptionChange} />
-      </Form.Group>
-
+      </Form.Group> */}
+      </div>
     
       <Form.Group controlId="productPrice">
         <Form.Label>Precio del producto</Form.Label>
-        <Form.Control type="number" placeholder="Ingresa el precio del producto" value={price} onChange={ handlePriceChange} />
+        <Form.Control type="number" placeholder="Ingresa el precio del producto" value={price} onChange={ handlePriceChange}  style={{ border: 'none', '1.5rem': '1.2rem', borderRadius: '0',  marginLeft: '20px'}}/>
       </Form.Group>
 
 
-      <Button variant="primary" type="submit" onClick={handleSubmit}  style={{ backgroundColor: '#511A29', border: 'none', '1.5rem' : '1.2rem' }}>
+      <Button variant="primary" type="submit" onClick={handleSubmit}  Submit style={{ backgroundColor: '#511A29', border: 'none', '1.5rem': '1.2rem', borderRadius: '0', marginTop: '20px', marginLeft: '20px', fontSize: '20px', size: '20 px'}}>
         Agregar producto
       </Button>
     </Form>
