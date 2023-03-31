@@ -1,13 +1,24 @@
+import "../Style/ProductViewBanner.css";
 import { Link, useLoaderData } from "react-router-dom";
 import { Card, Button } from "react-bootstrap";
 import { Row, Col, Container } from 'react-bootstrap';
 import "../Style/Product.css";
 import { useState, useEffect } from 'react';
 import React from "react";
+import { productsHandler } from "../handlers/productHandler";
 
 
-function Product() {
-  const { products } = useLoaderData();
+function CandleView () {
+
+    const [products, setProducts] = useState([]);
+    useEffect(() => {
+        getData();
+      }, []);
+const getData = async () => {
+        const data = await productsHandler.loadProducts();
+        setProducts(data);
+      };
+    
   const cartProducts = JSON.parse(localStorage.getItem("cartProducts")) || [];
   
 
@@ -41,11 +52,22 @@ function Product() {
   const showNumProducts = windowSize >= 1200 ? 4 : 3;
   const cardWidth = windowSize >= 1200 ? '20rem' : '20rem';
   const cardHeight = windowSize >= 1200 ? '20rem' : '28rem';
+  const candle = products.filter(item => item.category === "velas");
 
-  return (
-    <Container>
+
+    return (
+        <>
+        <div id="ProductContainer">
+            <div id="BannerText">
+                <h1 id="CVTitle" style={{ fontSize: "5rem" }}>Velas</h1>
+                <p id="ProductBannerP">Componemos nuestro surtido de velas con varios proveedores, siempre asegurándonos de que están fabricadas artesanalmente 100% de soja natural, mediante procedimientos respetuosos con el medio ambiente. Disfruta de nuestra gama de aromas, desde notas florales y dulces para revitalizarse, toques de bosque, humo y madera para gustos más intensos hasta productos específicos para relajación con esencias lavanda o bergamota. </p>
+            </div>
+            <img id="BannerImg" src="src\Img\candleview.png" alt="" />
+        </div>
+
+        <Container>
       <Row className="d-flex flex-wrap justify-content-center">
-        {products.map((product) => (
+        {candle.map((product) => (
           <Col md={12 / showNumProducts} key={product.id} className="custom-col">
             <Card className="custom-card" style={{ width: cardWidth, height: cardHeight, margin: '30px 1em' }}>
               <div className="d-flex justify-content-center" style={{ marginTop: '30px' }} >
@@ -71,7 +93,8 @@ function Product() {
       </Row>
 
     </Container>
-
-  );
+        </>
+    );
 }
-export default Product;
+
+export default CandleView;

@@ -16,6 +16,7 @@ import AdminAddProduct from "../Pages/AdminAddProduct";
 import Admin from "../Pages/Admin";
 import AdminUser from "../Pages/AdminUser";
 import LoginPage from "../Pages/LoginPage";
+import ProductCandelView from "../Pages/ProductCandelView";
 
 export const router = createBrowserRouter([
     {
@@ -63,8 +64,14 @@ export const router = createBrowserRouter([
                         loader: fetchProduct,
                     },
                     {
-                        path: '/productList/velas',
+                        path: '/productList/',
                         element: <ProductList />,
+                        loader: fetchProducts,
+                    },
+
+                    {
+                        path: '/productList/velas',
+                        element: <ProductCandelView />,
                         loader: fetchProducts,
                     },
                     

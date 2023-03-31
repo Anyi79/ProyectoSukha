@@ -1,0 +1,37 @@
+#ProductContainer  {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2%;
+
+}
+
+#CVTitle {
+    color: white;
+    font-family: 'Qwitcher Grypen';
+    font-size: 
+
+}
+
+#ProductBannerP {
+    color: white;
+    font-family: 'Prociono', serif;
+    text-align: center;
+
+}
+
+#BannerText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #7E6268;
+    padding: 1.875rem;
+    width: 60%;
+    height: auto;
+}
+
+#BannerImg {
+    width: 40%;
+    height: auto;
+    
+}
