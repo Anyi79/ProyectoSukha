@@ -13,7 +13,7 @@ const ProductHandlerAPI = {
             "Category": newProduct.category,
             "Brand": newProduct.brand,
             "Description": newProduct.description,
-            "Content": newProduct.picture,
+            "Content": newProduct.image,
             "Price": parseFloat(newProduct.price),
             "Stock": parseInt(newProduct.stock),
             "InsertDate": new Date(),
@@ -39,20 +39,20 @@ const ProductHandlerAPI = {
             return;
         }
 
-        const extension = format === 'jpg' ? 2 : 1;
+        const fileExtension = updatedProduct.extension === 'jpg' ? 1 : 2;
         
         let updatedProductStructure = {
             "Name": updatedProduct.name,
             "Category": updatedProduct.category,
             "Brand": updatedProduct.brand,
             "Description": updatedProduct.description,
-            "Content": updatedProduct.content,
+            "Content": updatedProduct.picture,
             "Price": updatedProduct.price,
             "Stock": updatedProduct.stock,
             "insertDate": new Date(),
             "updateDate": new Date(),
             "isActive": updatedProduct.isActive,
-            "fileExtension": extension,
+            "fileExtension": fileExtension,
         }
         console.log(updatedProductStructure)
 

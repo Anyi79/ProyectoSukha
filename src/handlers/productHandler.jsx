@@ -30,21 +30,23 @@ console.log("esto es el nuevo prduct", newProductStructure);
 deleteProduct(id){
     return productService.deleteProduct(id);
 },
-/*updateProduct(id, updatedProduct){
+updateProduct(updatedProduct){
     if (!updatedProduct) {
         return;
     }
 
     let updatedProductStructure = {
-        "name": updatedProduct.title,
-        "description": updatedProduct.description,
-        "category": updatedProduct.category,
-        "brand":updatedProduct.brand,
+        "id" : updatedProduct.id,
+        "name": updatedProduct.name,
+       /*  "description": updatedProduct.description,
+        "category": updatedProduct.category, */
         "price": updatedProduct.price,
-        "image": updatedProduct.image
+        "brand":updatedProduct.brand
+       
+       
     }
 
-    return productService.updateProduct(id, updatedProductStructure);
-} */
+    return productService.updateProduct(updatedProductStructure);
+} 
 
 }  

@@ -42,10 +42,6 @@ export const router = createBrowserRouter([
                         element: <Admin />,
                     },
                     {
-                        path: '/admin/adminAddProduct/',
-                        element: <AdminAddProduct />,
-                    },
-                    {
                         path: '/user/:id',
                         element: <AdminUser />,
                         //loader: fetchUser,
@@ -76,8 +72,6 @@ export const router = createBrowserRouter([
                      {
                         path: '/addProduct/',
                         element: <AddProduct />,
-                      
-
                     }, 
                     {
                         path: '/adminView/',
@@ -87,11 +81,9 @@ export const router = createBrowserRouter([
 
                     }, 
                     {
-                        path: '/editProduct/',
+                        path: '/editProduct/:id',
                         element: <EditProduct />,
-                        loader: fetchProducts
-                      
-
+                        loader: fetchProduct
                     },
 
 

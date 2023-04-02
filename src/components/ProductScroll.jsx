@@ -68,10 +68,10 @@ function ProductScroll() {
   <div style={{ display: 'flex', overflowX: 'auto'}}> 
   {products.filter(product => product.isActive === true).map((product) => (
           <Col md={12 / showNumProducts} key={product.id} className="custom-col">
-            <Card className="custom-card" style={{ width: cardWidth, height: cardHeight, margin: '30px 1em',  borderRadius: '0' }}>
+            <Card className="custom-card" style={{ width: cardWidth, height: '60vh', textAlign:'center',margin: '30px 1em',  borderRadius: '0' }}>
               <div className="d-flex justify-content-center" style={{ marginTop: '30px' }} >
-                <Card.Title>{product.name}</Card.Title>
-              </div><Card.Img variant="top" src={`data:image/png;base64,${product.content}`} class="card-img-top rounded img-fluid" style={{ height: '12rem' }} />
+                <Card.Title style={{height:'14vh'}}>{product.name}</Card.Title>
+              </div><Card.Img variant="top" src={`data:image/png;base64,${product.content}`} class="card-img-top rounded img-fluid" style={{ height: '9rem', textAlign:'center', margin:'auto' }} />
               <Card.Body>
                 <div className="d-flex justify-content-center">
                   {/*   <Card.Text>{product.description}</Card.Text> */}
@@ -80,10 +80,10 @@ function ProductScroll() {
               <Card.Footer style={{ borderTop: 'none' }}>
                 <div className="d-flex justify-content-between align-items-center" style={{ marginBottom: '50px' }}>
                   <h5 style={{ fontSize: windowSize >= 1200 ? '1.5rem' : '1.2rem' }}>{product.price}€</h5>
-                  <Button variant="outline-primary" style={{ backgroundColor: 'transparent', border: 'none', color: '#511A29', '1.5rem': '1.2rem' }} href={`/productInfo/${product.id}`}>Mas Info</Button>
+                  <Link to={`/productInfo/${product.id}`}><Button variant="outline-primary" style={{backgroundColor: 'transparent', border: 'none', color: '#511A29', '1.5rem': '1.2rem' }}>Mas Info</Button></Link>
                 </div>
                 <div className="d-flex justify-content-center" style={{ marginBottom: '20px' }}>
-                  <Button variant="primary" style={{ backgroundColor: '#511A29', border: 'none', '1.5rem': '1.2rem',  borderRadius: '0' }} onClick={() => addToCart(product, 1)}>Añadir a la cesta</Button>
+                  <Button variant="primary" style={{ marginTop:'-3vh', backgroundColor: '#511A29', border: 'none', '1.5rem': '1.2rem',  borderRadius: '0' }} onClick={() => addToCart(product, 1)}>Añadir a la cesta</Button>
                 </div>
               </Card.Footer>
             </Card>
