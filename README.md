@@ -26,10 +26,10 @@ Figma: https://www.figma.com/file/s446W6w5EkREz68W51YCKj/E-commerce-Full-Star?no
 
 
 ## 👩‍💻Group members:
-+ Rosmery Rengel (Scrum Master) https://github.com/rrengelj // https://www.linkedin.com/in/rosemary-rengel-jimenez-4b693225a/
-+ Carmen Trillo (Product Owner) https://github.com/Carmen-Trillo // https://www.linkedin.com/in/carmentrillonavarro/
-+ Anyi FR https://github.com/Anyi79 // https://www.linkedin.com/in/anyi-fr-0852a4257/
-+ Delia Muñoz Molero https://github.com/DeliaMunMol // https://www.linkedin.com/in/delia-muñoz/
++ Rosmery Rengel (Scrum Master) https://github.com/rrengelj - https://www.linkedin.com/in/rosemary-rengel-jimenez-4b693225a/
++ Carmen Trillo (Product Owner) https://github.com/Carmen-Trillo - https://www.linkedin.com/in/carmentrillonavarro/
++ Anyi FR https://github.com/Anyi79 - https://www.linkedin.com/in/anyi-fr-0852a4257/
++ Delia Muñoz Molero https://github.com/DeliaMunMol - https://www.linkedin.com/in/delia-muñoz/
 
 
 ## 💻How to install this project:
